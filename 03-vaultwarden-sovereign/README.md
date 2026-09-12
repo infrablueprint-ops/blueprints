@@ -2,7 +2,13 @@
 
 Production-hardened deployment of **Vaultwarden** (lightweight Bitwarden-compatible server in Rust) with automatic HTTPS and defense-in-depth security.
 
-Accompanies the masterclass: **[Vaultwarden: Sovereign Zero-Cloud Password Management in Rust (4K Blueprint)](https://youtu.be/xVttPj_b7nI)**.
+<div align="center">
+
+[![Watch Vaultwarden Masterclass](https://img.youtube.com/vi/xVttPj_b7nI/maxresdefault.jpg)](https://youtu.be/xVttPj_b7nI)
+
+*▶️ [Watch the complete 4K step-by-step masterclass on YouTube (09:05)](https://youtu.be/xVttPj_b7nI)*
+
+</div>
 
 ---
 
