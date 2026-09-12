@@ -2,7 +2,13 @@
 
 Enterprise Ansible automation baseline for Linux production servers.
 
-Accompanies the masterclass: **[Mastering Secure Ansible in Production (4K Masterclass)](https://youtu.be/RrKONBKSbRM)**.
+<div align="center">
+
+[![Watch Ansible Masterclass](https://img.youtube.com/vi/RrKONBKSbRM/maxresdefault.jpg)](https://youtu.be/RrKONBKSbRM)
+
+*▶️ [Watch the complete 4K step-by-step masterclass on YouTube (10:00)](https://youtu.be/RrKONBKSbRM)*
+
+</div>
 
 ---
 
