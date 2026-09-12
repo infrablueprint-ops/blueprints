@@ -1,0 +1,42 @@
+---
+- name: Production Linux Baseline Hardening
+  hosts: all
+  become: yes
+  tasks:
+    - name: Update apt cache and upgrade packages
+      apt:
+        update_cache: yes
+        upgrade: dist
+      when: ansible_os_family == "Debian"
+
+    - name: Disable SSH password authentication (Key-only)
+      lineinfile:
+        path: /etc/ssh/sshd_config
+        regexp: '^#?PasswordAuthentication'
+        line: 'PasswordAuthentication no'
+      notify: Restart SSH
+
+    - name: Disable Root SSH Login
+      lineinfile:
+        path: /etc/ssh/sshd_config
+        regexp: '^#?PermitRootLogin'
+        line: 'PermitRootLogin no'
+      notify: Restart SSH
+
+    - name: Ensure UFW firewall is active
+      ufw:
+        state: enabled
+        policy: deny
+        direction: incoming
+
+    - name: Allow SSH port through firewall
+      ufw:
+        rule: limit
+        port: '22'
+        proto: tcp
+
+  handlers:
+    - name: Restart SSH
+      service:
+        name: sshd
+        state: restarted
