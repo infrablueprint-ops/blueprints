@@ -1,0 +1,23 @@
+services:
+  sre-target-app:
+    image: python:3.12-slim
+    container_name: sre_target_app
+    restart: always
+    command: python -m http.server 8080
+    ports:
+      - "8080:8080"
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 256M
+
+  ebpf-agent-probe:
+    image: alpine:latest
+    container_name: ebpf_agent_probe
+    privileged: true
+    pid: host
+    volumes:
+      - /sys/kernel/debug:/sys/kernel/debug:ro
+      - /proc:/host/proc:ro
+    command: tail -f /dev/null
