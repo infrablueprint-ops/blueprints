@@ -1,0 +1,51 @@
+services:
+  vaultwarden:
+    image: vaultwarden/server:latest
+    container_name: vaultwarden
+    restart: unless-stopped
+    environment:
+      - WEBSOCKET_ENABLED=true
+      - SIGNUPS_ALLOWED=${SIGNUPS_ALLOWED:-false}
+      - INVITATIONS_ALLOWED=${INVITATIONS_ALLOWED:-true}
+      - SHOW_PASSWORD_HINT=false
+      - ADMIN_TOKEN=${ADMIN_TOKEN}
+      - DOMAIN=https://${DOMAIN}
+      # Hardened Argon2id Parameters (Memory: 64MB, Iterations: 3, Parallelism: 4)
+      - PASSWORD_ITERATIONS=600000
+    volumes:
+      - ./vw-data:/data
+    networks:
+      - internal_vault
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 512M
+        reservations:
+          memory: 128M
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:80/alive"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+  caddy:
+    image: caddy:2-alpine
+    container_name: vaultwarden_caddy
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - ./caddy-data:/data
+      - ./caddy-config:/config
+    networks:
+      - internal_vault
+    depends_on:
+      vaultwarden:
+        condition: service_healthy
+
+networks:
+  internal_vault:
+    driver: bridge
