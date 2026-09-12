@@ -1,0 +1,15 @@
+services:
+  crawl4ai:
+    image: unclecode/crawl4ai:latest
+    container_name: crawl4ai_server
+    restart: unless-stopped
+    ports:
+      - "11235:11235"
+    environment:
+      - CRAWL4AI_API_TOKEN=${CRAWL4AI_API_TOKEN:-secret_token}
+    deploy:
+      resources:
+        limits:
+          cpus: '2.0'
+          memory: 2G
+    shm_size: '1gb'
