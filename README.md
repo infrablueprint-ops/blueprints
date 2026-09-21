@@ -21,11 +21,15 @@ Click any preview below to watch the complete 4K step-by-step masterclass with f
 
 | ⚙️ 01. Hardened Ansible in Production | 🐙 02. Crawl4AI High-Throughput Crawler |
 | :---: | :---: |
-| [![Ansible Masterclass](https://img.youtube.com/vi/RrKONBKSbRM/hqdefault.jpg)](https://youtu.be/RrKONBKSbRM)<br>▶️ **[Watch 4K Masterclass](https://youtu.be/RrKONBKSbRM)** | [![Crawl4AI Spotlight](https://img.youtube.com/vi/qonYs-SIuU0/hqdefault.jpg)](https://youtu.be/qonYs-SIuU0)<br>▶️ **[Watch 4K Spotlight](https://youtu.be/qonYs-SIuU0)** |
+| [![Ansible Masterclass](https://img.youtube.com/vi/RrKONBKSbRM/hqdefault.jpg)](https://youtu.be/RrKONBKSbRM)<br>▶️ **[Watch 4K Masterclass](https://youtu.be/RrKONBKSbRM)** | [![Crawl4AI Spotlight](https://img.youtube.com/vi/bf8qtNK4KUU/hqdefault.jpg)](https://youtu.be/bf8qtNK4KUU)<br>▶️ **[Watch 4K Spotlight](https://youtu.be/bf8qtNK4KUU)** |
 
 | 🦀 03. Sovereign Vaultwarden in Rust | ⚛️ 04. Autonomous SRE & eBPF Benchmark |
 | :---: | :---: |
-| [![Vaultwarden Spotlight](https://img.youtube.com/vi/xVttPj_b7nI/hqdefault.jpg)](https://youtu.be/xVttPj_b7nI)<br>▶️ **[Watch 4K Spotlight](https://youtu.be/xVttPj_b7nI)** | [![Autonomous SRE Brief](https://img.youtube.com/vi/WTNcJKHX8vk/hqdefault.jpg)](https://youtu.be/WTNcJKHX8vk)<br>▶️ **[Watch 4K Brief](https://youtu.be/WTNcJKHX8vk)** |
+| [![Vaultwarden Spotlight](https://img.youtube.com/vi/dVSgt6lcXlw/hqdefault.jpg)](https://youtu.be/dVSgt6lcXlw)<br>▶️ **[Watch 4K Spotlight](https://youtu.be/dVSgt6lcXlw)** | [![Autonomous SRE Brief](https://img.youtube.com/vi/yNRBWfI_qRw/hqdefault.jpg)](https://youtu.be/yNRBWfI_qRw)<br>▶️ **[Watch 4K Brief](https://youtu.be/yNRBWfI_qRw)** |
+
+| 🏗️ 05. Production Terraform Foundations | 🧠 06. JEV — Typed AI Decisions |
+| :---: | :---: |
+| [![Terraform Masterclass](https://img.youtube.com/vi/s9Piakl4s-g/hqdefault.jpg)](https://youtu.be/s9Piakl4s-g)<br>▶️ **[Watch 4K Masterclass](https://youtu.be/s9Piakl4s-g)** | [![JEV Brief](https://img.youtube.com/vi/P1FfigH033Q/hqdefault.jpg)](https://youtu.be/P1FfigH033Q)<br>▶️ **[Watch 4K Blueprint](https://youtu.be/P1FfigH033Q)** |
 
 ---
 
@@ -43,9 +47,9 @@ Every blueprint in this repository follows strict industrial engineering standar
 | Blueprint | Category | Description | Video Masterclass | Status |
 | :--- | :---: | :--- | :---: | :---: |
 | [`01-ansible-production`](./01-ansible-production) | ⚙️ Ops Core | Hardened Ansible inventory, SSH hardening, and idempotent production playbooks | [📺 Watch (10:00)](https://youtu.be/RrKONBKSbRM) | ✅ Live |
-| [`02-crawl4ai-pipeline`](./02-crawl4ai-pipeline) | 🐙 AI Ops | High-throughput asynchronous LLM web crawler with markdown extraction | [📺 Watch (08:58)](https://youtu.be/qonYs-SIuU0) | 🗓️ 13 Sept (15h) |
-| [`03-vaultwarden-sovereign`](./03-vaultwarden-sovereign) | 🦀 Security | Sovereign zero-cloud password manager with SQLite WAL, Argon2id & Caddy HTTPS | [📺 Watch (09:05)](https://youtu.be/xVttPj_b7nI) | 🗓️ 20 Sept (15h) |
-| [`04-autonomous-sre-ebpf`](./04-autonomous-sre-ebpf) | ⚛️ arXiv Research | SREGym triage benchmark, live eBPF kernel probes & anti-sabotage guardrails | [📺 Watch (08:54)](https://youtu.be/WTNcJKHX8vk) | 🗓️ 15 Sept (18h) |
+| [`02-crawl4ai-pipeline`](./02-crawl4ai-pipeline) | 🐙 AI Ops | High-throughput asynchronous LLM web crawler with markdown extraction | [📺 Watch (08:58)](https://youtu.be/bf8qtNK4KUU) | 🗓️ 13 Sept (15h) |
+| [`03-vaultwarden-sovereign`](./03-vaultwarden-sovereign) | 🦀 Security | Sovereign zero-cloud password manager with SQLite WAL, Argon2id & Caddy HTTPS | [📺 Watch (09:05)](https://youtu.be/dVSgt6lcXlw) | 🗓️ 20 Sept (15h) |
+| [`04-autonomous-sre-ebpf`](./04-autonomous-sre-ebpf) | ⚛️ arXiv Research | SREGym triage benchmark, live eBPF kernel probes & anti-sabotage guardrails | [📺 Watch (08:54)](https://youtu.be/yNRBWfI_qRw) | 🗓️ 15 Sept (18h) |
 
 ---
 
