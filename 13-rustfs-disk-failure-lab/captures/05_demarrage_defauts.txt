@@ -1,0 +1,16 @@
+$ venv/bin/python bench.py startup
+# date: 2026-09-24T01:34:34Z | host: WSL2 6.18.33.2-microsoft-standard-WSL2 | 12 vCPU | 15992 MiB | cwd /var/tmp/rustfs_lab
+
+# 1 drive, default credentials, RUSTFS_CHECK_UPDATE unset (code default)
+run 1: ready_s=0.146 idle_rss_10s_mib=169.2
+run 2: ready_s=0.146 idle_rss_10s_mib=173.7
+run 3: ready_s=0.147 idle_rss_10s_mib=173.5
+
+# run 3 (default log level): 0 line(s) matching ('default root credentials', 'update_check', 'New version', 'up to date', 'Starting RustFS')
+
+# run 4: same defaults + RUSTFS_OBS_LOGGER_LEVEL=info, 35 s (update check timeout is 30 s)
+{"timestamp":"2026-09-24T03:35:05.988688154+02:00","level":"WARN","message":"Detected default root credentials; set RUSTFS_ACCESS_KEY and RUSTFS_SECRET_KEY to non-default values for production deployments","event":"default_credentials_detected","component":"main","subsystem":"auth","warning":"Detected default root credentials; set RUSTFS_ACCESS_KEY and RUSTFS_SECRET_KEY to non-default values for production deployments","target":"rustfs::main::run","filename":"rustfs/src/startup_server.rs","line_number":101,"span":{"name":"run"},"spans":[{"name":"run"}],"threadName":"main","threadId":"ThreadId(
+{"timestamp":"2026-09-24T03:35:05.988711175+02:00","level":"INFO","message":"Starting RustFS server","event":"server_starting","component":"main","subsystem":"startup","server_address":"127.0.0.1:9000","ip":"127.0.0.1","port":"9000","version":"refs/tags/1.0.0","target":"rustfs::main::run","filename":"rustfs/src/startup_server.rs","line_number":111,"span":{"name":"run"},"spans":[{"name":"run"}],"threadName":"main","threadId":"ThreadId(1)"}
+{"timestamp":"2026-09-24T03:35:06.933773388+02:00","level":"INFO","message":"Current version is up to date: refs/tags/1.0.0","target":"rustfs::update","filename":"rustfs/src/update.rs","line_number":165,"threadName":"rustfs-worker","threadId":"ThreadId(18)"}
+
+# exit: 0

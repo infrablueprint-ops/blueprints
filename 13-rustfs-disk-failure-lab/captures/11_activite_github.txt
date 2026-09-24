@@ -1,0 +1,28 @@
+$ gh api repos/rustfs/rustfs ; search open issues/PRs ; releases ; main commits since 2026-08-24 ; contributors ; issues mentioning GLIBC
+# date: 2026-09-24T01:00:17Z | host: Windows 11, gh CLI
+
+stars=33731 forks=1508 license=Apache-2.0 language=Rust created=2023-11-23T13:45:10Z last_push=2026-09-24T00:37:00Z
+open_issues=27
+open_prs=8
+stable_releases=1 latest_stable=1.0.0 2026-09-16T10:03:34Z
+main_commits_since_2026-08-24=1028
+contributors=173
+glibc_issues:
+  #8062 [open] glibc 2.34 build for Rocky 9 / RedHat 9
+  #8079 [closed] ci(package): build gnu and musl DEB/RPM variants with distinct file names
+  #8068 [closed] fix(ci): publish version-tagged preview Docker images
+  #8023 [closed] No registered OIDC provider is ever usable in 1.0.0 — breaks both console SSO login and AssumeRoleWithWebIdentity
+  #8003 [open] Upgrading 1.0.0-beta.11-preview.1 → 1.0.1-preview.5 breaks existing buckets (500 "bucket incarnation sidecar exists without bucket metadata"), MakeBucket fails cluster-wide, deleted buckets resurrect, and pool.bin v3 blocks rollback to beta.11
+  #8034 [closed] ci(docker): sync the Docker Hub overview from README.md on release
+  #5364 [closed] [feat] provide ghcr image
+  #4924 [closed] chore(docker): update Alpine and Ubuntu base images
+  #8062 [open] glibc 2.34 build for Rocky 9 / RedHat 9
+  #8079 [closed] ci(package): build gnu and musl DEB/RPM variants with distinct file names
+  #8068 [closed] fix(ci): publish version-tagged preview Docker images
+  #8023 [closed] No registered OIDC provider is ever usable in 1.0.0 — breaks both console SSO login and AssumeRoleWithWebIdentity
+  #8003 [open] Upgrading 1.0.0-beta.11-preview.1 → 1.0.1-preview.5 breaks existing buckets (500 "bucket incarnation sidecar exists without bucket metadata"), MakeBucket fails cluster-wide, deleted buckets resurrect, and pool.bin v3 blocks rollback to beta.11
+  #8034 [closed] ci(docker): sync the Docker Hub overview from README.md on release
+  #5364 [closed] [feat] provide ghcr image
+  #4924 [closed] chore(docker): update Alpine and Ubuntu base images
+
+# exit: 0

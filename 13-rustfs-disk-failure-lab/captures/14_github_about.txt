@@ -1,0 +1,15 @@
+$ gh api repos/rustfs/rustfs --jq ".description, .license.spdx_id, .stargazers_count, .forks_count, (.topics|join(\", \"))"
+# date: 2026-09-24T00:59:24Z | host: Windows 11, gh CLI
+
+RustFS is an open-source, S3-compatible high-performance object storage system supporting migration and coexistence with other S3-compatible platforms such as MinIO and Ceph.
+Apache-2.0
+33731
+1508
+ai-native, ai-storage, amazon-s3, bigdata, cloud-native, filesystem, minio, multi-cloud, object-storage, objectstorage, rust, s3
+
+$ gh api repos/rustfs/rustfs/releases/tags/1.0.0 --jq ".name, .published_at, .prerelease"
+RustFS 1.0.0
+2026-09-16T10:03:34Z
+false
+
+# exit: 0

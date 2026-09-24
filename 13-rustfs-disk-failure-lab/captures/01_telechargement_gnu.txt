@@ -1,0 +1,7 @@
+$ curl -sSLO https://github.com/rustfs/rustfs/releases/download/1.0.0/rustfs-linux-x86_64-gnu-v1.0.0.zip && curl -sSLO https://github.com/rustfs/rustfs/releases/download/1.0.0/SHA256SUMS && grep 'linux-x86_64-gnu-v' SHA256SUMS && sha256sum rustfs-linux-x86_64-gnu-v1.0.0.zip
+# date: 2026-09-24T01:34:22Z | host: WSL2 6.18.33.2-microsoft-standard-WSL2 | 12 vCPU | 15992 MiB | cwd /var/tmp/rustfs_lab
+
+2d5059501745682664c3d345b22274b66079c952fbec7e1ce66980ef4515cd42  rustfs-linux-x86_64-gnu-v1.0.0.zip
+2d5059501745682664c3d345b22274b66079c952fbec7e1ce66980ef4515cd42  rustfs-linux-x86_64-gnu-v1.0.0.zip
+
+# exit: 0
