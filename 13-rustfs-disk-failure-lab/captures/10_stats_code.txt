@@ -1,0 +1,20 @@
+$ git rev-parse HEAD; git describe --tags; echo "tracked files: $(git ls-files | wc -l)"; echo ".rs files: $(git ls-files "*.rs" | wc -l)"; echo ".rs lines: $(git ls-files -z "*.rs" | xargs -0 cat | wc -l)"; echo "workspace crates: $(sed -n "/^members = \[/,/^\]/p" Cargo.toml | grep -c "^    \"")"; echo "test annotations (#[test] / #[tokio::test]): $(git grep -E "#\[(tokio::)?test" -- "*.rs" | wc -l)"; echo "TODO/FIXME: $(git grep -E "TODO|FIXME" -- "*.rs" | wc -l)"; echo "CI workflows: $(ls .github/workflows | wc -l)"; echo "largest .rs files:"; git ls-files -z "*.rs" | xargs -0 wc -l | sort -rn | grep -v total | head -5
+# date: 2026-09-24T00:59:54Z | host: Windows 11, Git Bash | cwd C:\Temp\analyse_github_rustfs @ d47f54bfb2f3
+
+d47f54bfb2f39f48bd1adda334bd27e151fe85b8
+1.0.0
+tracked files: 2847
+.rs files: 1897
+.rs lines: 1533928
+workspace crates: 51
+test annotations (#[test] / #[tokio::test]): 20359
+TODO/FIXME: 84
+CI workflows: 54
+largest .rs files:
+   31691 crates/ecstore/src/core/pools.rs
+   23924 crates/ecstore/src/disk/local.rs
+   23176 crates/ecstore/src/store/init.rs
+   22500 crates/ecstore/src/set_disk/ops/object.rs
+  19478 rustfs/src/table_catalog/tests.rs
+
+# exit: 0

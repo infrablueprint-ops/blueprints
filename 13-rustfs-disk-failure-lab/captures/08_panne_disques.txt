@@ -1,0 +1,10 @@
+$ venv/bin/python bench.py failure
+# date: 2026-09-24T01:36:40Z | host: WSL2 6.18.33.2-microsoft-standard-WSL2 | 12 vCPU | 15992 MiB | cwd /var/tmp/rustfs_lab
+
+object written: 64 MiB sha256=b645bd1d228ff02a
+object files on d1: ['6f42cc2c-81eb-4df5-98f8-81c98d2bbf5b', 'xl.meta']
+1 drive(s) wiped (d4): GET OK, sha256_identical=True
+2 drive(s) wiped (d3): GET OK, sha256_identical=True
+3 drive(s) wiped (d2): GET FAILED -> NoSuchBucket: An error occurred (NoSuchBucket) when calling the GetObject operation: The specified bucket does not exist
+
+# exit: 0

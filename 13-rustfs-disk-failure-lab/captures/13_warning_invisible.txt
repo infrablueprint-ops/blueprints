@@ -1,0 +1,9 @@
+$ grep -c 'default root credentials' log_startup_3.txt log_startup_4.txt; grep -o '"level":"WARN","message":"Detected default root credentials[^"]*"' log_startup_4.txt; grep -o '"message":"Current version is up to date[^"]*"' log_startup_4.txt
+# date: 2026-09-24T01:36:48Z | host: WSL2 6.18.33.2-microsoft-standard-WSL2 | 12 vCPU | 15992 MiB | cwd /var/tmp/rustfs_lab
+
+log_startup_3.txt:0
+log_startup_4.txt:1
+"level":"WARN","message":"Detected default root credentials; set RUSTFS_ACCESS_KEY and RUSTFS_SECRET_KEY to non-default values for production deployments"
+"message":"Current version is up to date: refs/tags/1.0.0"
+
+# exit: 0

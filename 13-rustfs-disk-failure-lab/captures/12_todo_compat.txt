@@ -1,0 +1,11 @@
+$ echo "RUSTFS_COMPAT_TODO: $(git grep "RUSTFS_COMPAT_TODO" -- "*.rs" | wc -l)"; echo "TODO(backlog): $(git grep "TODO(backlog" -- "*.rs" | wc -l)"; echo "TODO/FIXME total: $(git grep -E "TODO|FIXME" -- "*.rs" | wc -l)"; git grep -n "O_DIRECT" -- crates/ecstore/src/disk/local.rs | head -3
+# date: 2026-09-24T01:00:07Z | host: Windows 11, Git Bash | cwd C:\Temp\analyse_github_rustfs @ d47f54bfb2f3
+
+RUSTFS_COMPAT_TODO: 47
+TODO(backlog): 36
+TODO/FIXME total: 84
+crates/ecstore/src/disk/local.rs:806:/// Read-side EINVAL/EOPNOTSUPP from a native O_DIRECT read that happened AFTER a
+crates/ecstore/src/disk/local.rs:807:/// successful O_DIRECT open (rustfs/backlog#1214). Unlike an open-time refusal
+crates/ecstore/src/disk/local.rs:940:/// Enable O_DIRECT for large sequential reads.
+
+# exit: 0

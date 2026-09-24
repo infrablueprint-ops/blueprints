@@ -1,0 +1,23 @@
+$ curl -sSLO https://github.com/rustfs/rustfs/releases/download/1.0.0/rustfs-linux-x86_64-musl-v1.0.0.zip && grep 'linux-x86_64-musl-v' SHA256SUMS && sha256sum rustfs-linux-x86_64-musl-v1.0.0.zip && python3 extract.py && chmod +x bin_musl/rustfs && ls -l bin_musl/ && file bin_musl/rustfs && ./bin_musl/rustfs --version
+# date: 2026-09-24T01:34:27Z | host: WSL2 6.18.33.2-microsoft-standard-WSL2 | 12 vCPU | 15992 MiB | cwd /var/tmp/rustfs_lab
+
+c30a95b76546f25122c9ca387090ddb30c391ca5605621b0d7c881703c0f21c8  rustfs-linux-x86_64-musl-v1.0.0.zip
+c30a95b76546f25122c9ca387090ddb30c391ca5605621b0d7c881703c0f21c8  rustfs-linux-x86_64-musl-v1.0.0.zip
+['rustfs', 'rustfs-cli']
+total 516776
+-rwxr-xr-x 1 root root 264596736 Sep 24 03:34 rustfs
+-rw-r--r-- 1 root root 264580352 Sep 24 03:34 rustfs-cli
+bin_musl/rustfs: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), static-pie linked, BuildID[sha1]=0cfffe13509dffe5529fbe5f99d098297e0e49ee, stripped
+rustfs 1.0.0
+build time   : 2026-09-16 07:46:40 +00:00
+build profile: release
+build os     : linux-x86_64
+rust version : rustc 1.98.1 (48a229cea 2026-09-01)
+rust channel : stable-x86_64-unknown-linux-gnu
+git branch   : 
+git commit   : d47f54bfb2f39f48bd1adda334bd27e151fe85b8
+git tag      : 1.0.0
+git status   :
+
+
+# exit: 0

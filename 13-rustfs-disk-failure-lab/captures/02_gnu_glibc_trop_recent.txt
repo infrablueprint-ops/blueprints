@@ -1,0 +1,12 @@
+$ python3 extract_gnu.py && chmod +x bin/rustfs && ls -l bin/ && ldd --version | head -1 && ./bin/rustfs --version
+# date: 2026-09-24T01:34:25Z | host: WSL2 6.18.33.2-microsoft-standard-WSL2 | 12 vCPU | 15992 MiB | cwd /var/tmp/rustfs_lab
+
+['rustfs', 'rustfs-cli']
+total 518204
+-rwxr-xr-x 1 root root 265328144 Sep 24 03:34 rustfs
+-rw-r--r-- 1 root root 265306648 Sep 24 03:34 rustfs-cli
+ldd (Ubuntu GLIBC 2.35-0ubuntu3.13) 2.35
+./bin/rustfs: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.38' not found (required by ./bin/rustfs)
+./bin/rustfs: /lib/x86_64-linux-gnu/libc.so.6: version `GLIBC_2.39' not found (required by ./bin/rustfs)
+
+# exit: 1

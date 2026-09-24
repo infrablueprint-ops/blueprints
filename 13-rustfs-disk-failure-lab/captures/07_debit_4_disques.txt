@@ -1,0 +1,23 @@
+$ venv/bin/python bench.py throughput
+# date: 2026-09-24T01:35:41Z | host: WSL2 6.18.33.2-microsoft-standard-WSL2 | 12 vCPU | 15992 MiB | cwd /var/tmp/rustfs_lab
+
+4 drives: ready_s=0.229 idle_rss_mib=175.5
+rep 1 conc  1: PUT_4KiB_obj_s=328 GET_4KiB_obj_s=848
+rep 1 conc 16: PUT_4KiB_obj_s=528 GET_4KiB_obj_s=1139
+rep 2 conc  1: PUT_4KiB_obj_s=330 GET_4KiB_obj_s=844
+rep 2 conc 16: PUT_4KiB_obj_s=514 GET_4KiB_obj_s=1117
+rep 3 conc  1: PUT_4KiB_obj_s=321 GET_4KiB_obj_s=850
+rep 3 conc 16: PUT_4KiB_obj_s=505 GET_4KiB_obj_s=1118
+rep 1: PUT_1GiB_MiB_s=109 GET_1GiB_MiB_s=1389
+rep 2: PUT_1GiB_MiB_s=104 GET_1GiB_MiB_s=727
+rep 3: PUT_1GiB_MiB_s=101 GET_1GiB_MiB_s=1192
+rss_pic_mib=708.0
+du -sb of the 4 drives for one 64 MiB object:
+33569256	/var/tmp/rustfs_lab/data4/d1/bench/ratio
+33569256	/var/tmp/rustfs_lab/data4/d2/bench/ratio
+33569256	/var/tmp/rustfs_lab/data4/d3/bench/ratio
+33569256	/var/tmp/rustfs_lab/data4/d4/bench/ratio
+
+bytes_on_disk=134277024 ratio=2.001
+
+# exit: 0

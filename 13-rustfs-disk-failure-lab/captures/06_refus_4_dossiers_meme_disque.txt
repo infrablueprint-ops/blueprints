@@ -1,0 +1,9 @@
+$ RUSTFS_ACCESS_KEY=labadmin RUSTFS_SECRET_KEY=lab-secret-0123456789 timeout 20 ./bin_musl/rustfs server --address 127.0.0.1:9000 '/var/tmp/rustfs_lab/data4/d{1...4}' 2>&1 | grep FATAL | cut -c1-420; df --output=source /var/tmp/rustfs_lab/data4/d1 /var/tmp/rustfs_lab/data4/d4
+# date: 2026-09-24T01:35:41Z | host: WSL2 6.18.33.2-microsoft-standard-WSL2 | 12 vCPU | 15992 MiB | cwd /var/tmp/rustfs_lab
+
+[FATAL] Server runtime failed: local erasure endpoints must use distinct physical disks; detected shared devices [sdd => /var/tmp/rustfs_lab/data4/d1, /var/tmp/rustfs_lab/data4/d2, /var/tmp/rustfs_lab/data4/d3, /var/tmp/rustfs_lab/data4/d4]. validation diagnostics: [path='/var/tmp/rustfs_lab/data4/d1', canonical='/var/tmp/rustfs_lab/data4/d1', st_dev='8:48', device_ids=[sdd]; path='/var/tmp/rustfs_lab/data4/d2', cano
+Filesystem
+/dev/sdd
+/dev/sdd
+
+# exit: 0

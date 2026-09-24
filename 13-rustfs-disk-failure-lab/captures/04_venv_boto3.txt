@@ -1,0 +1,6 @@
+$ python3 -m venv --without-pip venv && curl -sSL https://bootstrap.pypa.io/get-pip.py -o get-pip.py && venv/bin/python get-pip.py -q && venv/bin/pip install -q boto3==1.35.99 psutil && venv/bin/python -c 'import boto3,psutil,sys;print(sys.version.split()[0],boto3.__version__,psutil.__version__)'
+# date: 2026-09-24T01:34:31Z | host: WSL2 6.18.33.2-microsoft-standard-WSL2 | 12 vCPU | 15992 MiB | cwd /var/tmp/rustfs_lab
+
+3.10.12 1.35.99 7.2.2
+
+# exit: 0

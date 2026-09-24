@@ -1,0 +1,6 @@
+$ venv/bin/python bench.py heal
+# date: 2026-09-24T01:36:42Z | host: WSL2 6.18.33.2-microsoft-standard-WSL2 | 12 vCPU | 15992 MiB | cwd /var/tmp/rustfs_lab
+
+d4 rebuilt 4.08 s after the read: ['b3d63440-67cf-4475-b8ce-fd17e3b05f37', 'xl.meta'], 33565160 bytes
+
+# exit: 0
