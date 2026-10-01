@@ -1,0 +1,69 @@
+{
+  "task": "Accounts payable triage of an incoming supplier document for Acme Ops Ltd",
+  "questions": {
+    "doc_type": {
+      "type": "choice",
+      "instructions": "What kind of document is this?",
+      "criteria": {
+        "invoice": "An invoice or bill asking for payment, or confirming a payment for goods or services",
+        "receipt": "A receipt or ticket proving that something was already paid at the point of sale",
+        "quote": "A quotation or estimate: a price offer, not a request for payment",
+        "credit_note": "A credit note or refund: money given back to the customer",
+        "payment_reminder": "A reminder or dunning letter about an unpaid, overdue invoice",
+        "other": "Any other document"
+      }
+    },
+    "category": {
+      "type": "choice",
+      "instructions": "Which expense category should accounting book this document under?",
+      "criteria": {
+        "software_saas": "Software licences and SaaS subscriptions",
+        "cloud_hosting": "Cloud infrastructure, servers, hosting and data transfer",
+        "hardware": "Purchase of computers, monitors and other IT equipment",
+        "repairs_maintenance": "Repairs, servicing and maintenance work",
+        "travel": "Transport, taxis, flights, trains and hotel stays",
+        "meals": "Restaurants, catering and business meals",
+        "utilities": "Electricity, gas and water",
+        "telecom": "Internet access and phone lines",
+        "office_supplies": "Paper, toner and small office supplies",
+        "professional_services": "Lawyers, accountants and consultants",
+        "marketing": "Advertising, printing of flyers and banners, trade fairs",
+        "other": "Anything else"
+      }
+    },
+    "payment_status": {
+      "type": "choice",
+      "instructions": "What is the payment status of this document?",
+      "criteria": {
+        "paid": "Already paid or settled",
+        "due": "Payment is due, the due date has not passed yet",
+        "overdue": "Payment is late or overdue",
+        "no_payment_info": "The document does not ask for any payment"
+      }
+    },
+    "vat_shown": {
+      "type": "noul",
+      "instructions": "The document shows a VAT or sales-tax amount"
+    },
+    "amount_band": {
+      "type": "choice",
+      "instructions": "What is the total amount of the document?",
+      "criteria": {
+        "under_100": "Less than 100",
+        "100_to_1000": "Between 100 and 1,000",
+        "1000_to_10000": "Between 1,000 and 10,000",
+        "over_10000": "More than 10,000"
+      }
+    },
+    "urgency": {
+      "type": "score",
+      "instructions": "How urgent is this document for the accounts payable team?",
+      "criteria": [
+        "no action needed",
+        "just file it",
+        "pay before the due date",
+        "pay now, it is overdue"
+      ]
+    }
+  }
+}

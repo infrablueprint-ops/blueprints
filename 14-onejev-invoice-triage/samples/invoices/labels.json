@@ -1,0 +1,114 @@
+{
+  "01_nimbus_saas_invoice.pdf": {
+    "doc_type": "invoice",
+    "category": "software_saas",
+    "payment_status": "paid",
+    "vat_shown": true,
+    "amount_band": "1000_to_10000"
+  },
+  "02_stratus_cloud_invoice.pdf": {
+    "doc_type": "invoice",
+    "category": "cloud_hosting",
+    "payment_status": "due",
+    "vat_shown": false,
+    "amount_band": "100_to_1000"
+  },
+  "03_kestrel_hardware_invoice.pdf": {
+    "doc_type": "invoice",
+    "category": "hardware",
+    "payment_status": "paid",
+    "vat_shown": true,
+    "amount_band": "1000_to_10000"
+  },
+  "04_harbor_inn_receipt.pdf": {
+    "doc_type": "receipt",
+    "category": "travel",
+    "payment_status": "paid",
+    "vat_shown": true,
+    "amount_band": "100_to_1000"
+  },
+  "05_copper_pot_receipt.pdf": {
+    "doc_type": "receipt",
+    "category": "meals",
+    "payment_status": "paid",
+    "vat_shown": true,
+    "amount_band": "100_to_1000"
+  },
+  "06_volt_energy_bill.pdf": {
+    "doc_type": "invoice",
+    "category": "utilities",
+    "payment_status": "due",
+    "vat_shown": true,
+    "amount_band": "1000_to_10000"
+  },
+  "07_fiberlink_telecom_invoice.pdf": {
+    "doc_type": "invoice",
+    "category": "telecom",
+    "payment_status": "due",
+    "vat_shown": true,
+    "amount_band": "100_to_1000"
+  },
+  "08_paperline_supplies_invoice.pdf": {
+    "doc_type": "invoice",
+    "category": "office_supplies",
+    "payment_status": "paid",
+    "vat_shown": true,
+    "amount_band": "under_100"
+  },
+  "09_atlas_legal_invoice.pdf": {
+    "doc_type": "invoice",
+    "category": "professional_services",
+    "payment_status": "due",
+    "vat_shown": true,
+    "amount_band": "1000_to_10000"
+  },
+  "10_kestrel_quote.pdf": {
+    "doc_type": "quote",
+    "category": "hardware",
+    "payment_status": "no_payment_info",
+    "vat_shown": true,
+    "amount_band": "over_10000"
+  },
+  "11_nimbus_credit_note.pdf": {
+    "doc_type": "credit_note",
+    "category": "software_saas",
+    "payment_status": null,
+    "vat_shown": true,
+    "amount_band": null
+  },
+  "12_stratus_overdue_reminder.pdf": {
+    "doc_type": "payment_reminder",
+    "category": "cloud_hosting",
+    "payment_status": "overdue",
+    "vat_shown": false,
+    "amount_band": "1000_to_10000"
+  },
+  "13_taxi_receipt.jpg": {
+    "doc_type": "receipt",
+    "category": "travel",
+    "payment_status": "paid",
+    "vat_shown": true,
+    "amount_band": "under_100"
+  },
+  "14_kestrel_repair_invoice.pdf": {
+    "doc_type": "invoice",
+    "category": "repairs_maintenance",
+    "payment_status": "due",
+    "vat_shown": true,
+    "amount_band": "100_to_1000"
+  },
+  "15_northlight_print_invoice.pdf": {
+    "doc_type": "invoice",
+    "category": "marketing",
+    "payment_status": "paid",
+    "vat_shown": true,
+    "amount_band": "100_to_1000"
+  },
+  "16_rays_plumbing_handwritten.pdf": {
+    "doc_type": "invoice",
+    "category": "repairs_maintenance",
+    "payment_status": "due",
+    "vat_shown": true,
+    "amount_band": "100_to_1000"
+  }
+}
