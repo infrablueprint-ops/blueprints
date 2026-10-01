@@ -1,6 +1,6 @@
 $ LLAMA_ARG_FLASH_ATTN=off uv run qev serve --gguf models/OmniJev_OneJev-4B-Q4_K_M.gguf --mmproj models/mmproj-OmniJev_OneJev-4B-f16.gguf --tokenizer models/OneJev-4B-tokenizer --host 127.0.0.1 --port 8000
 # 2026-10-01T12:01:13+02:00 | Windows 11 | AMD Radeon RX 6950 XT (Vulkan0) | llama.cpp b11193 | Git Bash
-2026-10-01 12:01:14,855 qev.llamacpp INFO starting C:\Users\laurent\AppData\Local\Microsoft\WinGet\Packages\ggml.llamacpp_Microsoft.Winget.Source_8wekyb3d8bbwe\llama-server.EXE --host 127.0.0.1 --port 34984 -c 65536 -np 2 --image-min-tokens 64 --image-max-tokens 16384 -m models/OmniJev_OneJev-4B-Q4_K_M.gguf --mmproj models/mmproj-OmniJev_OneJev-4B-f16.gguf
+2026-10-01 12:01:14,855 qev.llamacpp INFO starting C:\Users\ops\AppData\Local\Microsoft\WinGet\Packages\ggml.llamacpp_Microsoft.Winget.Source_8wekyb3d8bbwe\llama-server.EXE --host 127.0.0.1 --port 34984 -c 65536 -np 2 --image-min-tokens 64 --image-max-tokens 16384 -m models/OmniJev_OneJev-4B-Q4_K_M.gguf --mmproj models/mmproj-OmniJev_OneJev-4B-f16.gguf
 [transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
 2026-10-01 12:01:28,398 qev.llamacpp INFO llama.cpp engine on http://127.0.0.1:34984 (OmniJev_OneJev-4B-Q4_K_M), vision=True, tokenizer models/OneJev-4B-tokenizer
 INFO:     Started server process [20668]
@@ -122,57 +122,57 @@ Traceback (most recent call last):
   File "C:\temp\analyse_ocr_onejev\bp_fresh2\blueprints\14-onejev-invoice-triage\.venv\Lib\site-packages\qev\llamacpp.py", line 176, in _post
     with urllib.request.urlopen(req, timeout=self.timeout) as r:
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 215, in urlopen
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 215, in urlopen
     return opener.open(url, data, timeout)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 515, in open
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 515, in open
     response = self._open(req, data)
                ^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 532, in _open
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 532, in _open
     result = self._call_chain(self.handle_open, protocol, protocol +
              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 492, in _call_chain
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 492, in _call_chain
     result = func(*args)
              ^^^^^^^^^^^
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 1373, in http_open
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 1373, in http_open
     return self.do_open(http.client.HTTPConnection, req)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 1348, in do_open
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 1348, in do_open
     r = h.getresponse()
         ^^^^^^^^^^^^^^^
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1430, in getresponse
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1430, in getresponse
     response.begin()
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 331, in begin
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 331, in begin
     version, status, reason = self._read_status()
                               ^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 292, in _read_status
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 292, in _read_status
     line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\socket.py", line 720, in readinto
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\socket.py", line 720, in readinto
     return self._sock.recv_into(b)
            ^^^^^^^^^^^^^^^^^^^^^^^
 ConnectionResetError: [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
 INFO:     127.0.0.1:41995 - "POST /v1/systemone HTTP/1.1" 500 Internal Server Error
 ERROR:    Exception in ASGI application
 Traceback (most recent call last):
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 1344, in do_open
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 1344, in do_open
     h.request(req.get_method(), req.selector, req.data, headers,
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1338, in request
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1338, in request
     self._send_request(method, url, body, headers, encode_chunked)
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1384, in _send_request
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1384, in _send_request
     self.endheaders(body, encode_chunked=encode_chunked)
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1333, in endheaders
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1333, in endheaders
     self._send_output(message_body, encode_chunked=encode_chunked)
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1093, in _send_output
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1093, in _send_output
     self.send(msg)
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1037, in send
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1037, in send
     self.connect()
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1003, in connect
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1003, in connect
     self.sock = self._create_connection(
                 ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\socket.py", line 865, in create_connection
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\socket.py", line 865, in create_connection
     raise exceptions[0]
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\socket.py", line 850, in create_connection
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\socket.py", line 850, in create_connection
     sock.connect(sa)
 ConnectionRefusedError: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
 
@@ -254,45 +254,45 @@ Traceback (most recent call last):
   File "C:\temp\analyse_ocr_onejev\bp_fresh2\blueprints\14-onejev-invoice-triage\.venv\Lib\site-packages\qev\llamacpp.py", line 176, in _post
     with urllib.request.urlopen(req, timeout=self.timeout) as r:
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 215, in urlopen
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 215, in urlopen
     return opener.open(url, data, timeout)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 515, in open
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 515, in open
     response = self._open(req, data)
                ^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 532, in _open
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 532, in _open
     result = self._call_chain(self.handle_open, protocol, protocol +
              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 492, in _call_chain
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 492, in _call_chain
     result = func(*args)
              ^^^^^^^^^^^
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 1373, in http_open
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 1373, in http_open
     return self.do_open(http.client.HTTPConnection, req)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 1347, in do_open
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 1347, in do_open
     raise URLError(err)
 urllib.error.URLError: <urlopen error [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée>
 INFO:     127.0.0.1:41997 - "POST /v1/systemone HTTP/1.1" 500 Internal Server Error
 ERROR:    Exception in ASGI application
 Traceback (most recent call last):
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 1344, in do_open
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 1344, in do_open
     h.request(req.get_method(), req.selector, req.data, headers,
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1338, in request
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1338, in request
     self._send_request(method, url, body, headers, encode_chunked)
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1384, in _send_request
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1384, in _send_request
     self.endheaders(body, encode_chunked=encode_chunked)
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1333, in endheaders
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1333, in endheaders
     self._send_output(message_body, encode_chunked=encode_chunked)
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1093, in _send_output
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1093, in _send_output
     self.send(msg)
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1037, in send
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1037, in send
     self.connect()
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1003, in connect
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1003, in connect
     self.sock = self._create_connection(
                 ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\socket.py", line 865, in create_connection
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\socket.py", line 865, in create_connection
     raise exceptions[0]
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\socket.py", line 850, in create_connection
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\socket.py", line 850, in create_connection
     sock.connect(sa)
 ConnectionRefusedError: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
 
@@ -374,45 +374,45 @@ Traceback (most recent call last):
   File "C:\temp\analyse_ocr_onejev\bp_fresh2\blueprints\14-onejev-invoice-triage\.venv\Lib\site-packages\qev\llamacpp.py", line 176, in _post
     with urllib.request.urlopen(req, timeout=self.timeout) as r:
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 215, in urlopen
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 215, in urlopen
     return opener.open(url, data, timeout)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 515, in open
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 515, in open
     response = self._open(req, data)
                ^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 532, in _open
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 532, in _open
     result = self._call_chain(self.handle_open, protocol, protocol +
              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 492, in _call_chain
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 492, in _call_chain
     result = func(*args)
              ^^^^^^^^^^^
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 1373, in http_open
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 1373, in http_open
     return self.do_open(http.client.HTTPConnection, req)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 1347, in do_open
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 1347, in do_open
     raise URLError(err)
 urllib.error.URLError: <urlopen error [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée>
 INFO:     127.0.0.1:41999 - "POST /v1/systemone HTTP/1.1" 500 Internal Server Error
 ERROR:    Exception in ASGI application
 Traceback (most recent call last):
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 1344, in do_open
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 1344, in do_open
     h.request(req.get_method(), req.selector, req.data, headers,
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1338, in request
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1338, in request
     self._send_request(method, url, body, headers, encode_chunked)
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1384, in _send_request
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1384, in _send_request
     self.endheaders(body, encode_chunked=encode_chunked)
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1333, in endheaders
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1333, in endheaders
     self._send_output(message_body, encode_chunked=encode_chunked)
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1093, in _send_output
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1093, in _send_output
     self.send(msg)
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1037, in send
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1037, in send
     self.connect()
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1003, in connect
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1003, in connect
     self.sock = self._create_connection(
                 ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\socket.py", line 865, in create_connection
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\socket.py", line 865, in create_connection
     raise exceptions[0]
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\socket.py", line 850, in create_connection
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\socket.py", line 850, in create_connection
     sock.connect(sa)
 ConnectionRefusedError: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
 
@@ -494,22 +494,22 @@ Traceback (most recent call last):
   File "C:\temp\analyse_ocr_onejev\bp_fresh2\blueprints\14-onejev-invoice-triage\.venv\Lib\site-packages\qev\llamacpp.py", line 176, in _post
     with urllib.request.urlopen(req, timeout=self.timeout) as r:
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 215, in urlopen
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 215, in urlopen
     return opener.open(url, data, timeout)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 515, in open
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 515, in open
     response = self._open(req, data)
                ^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 532, in _open
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 532, in _open
     result = self._call_chain(self.handle_open, protocol, protocol +
              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 492, in _call_chain
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 492, in _call_chain
     result = func(*args)
              ^^^^^^^^^^^
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 1373, in http_open
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 1373, in http_open
     return self.do_open(http.client.HTTPConnection, req)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 1347, in do_open
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 1347, in do_open
     raise URLError(err)
 urllib.error.URLError: <urlopen error [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée>
 INFO:     127.0.0.1:42005 - "GET /health HTTP/1.1" 200 OK
@@ -5740,24 +5740,24 @@ INFO:     127.0.0.1:48789 - "GET /health HTTP/1.1" 200 OK
 INFO:     127.0.0.1:48790 - "POST /v1/systemone HTTP/1.1" 500 Internal Server Error
 ERROR:    Exception in ASGI application
 Traceback (most recent call last):
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 1344, in do_open
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 1344, in do_open
     h.request(req.get_method(), req.selector, req.data, headers,
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1338, in request
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1338, in request
     self._send_request(method, url, body, headers, encode_chunked)
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1384, in _send_request
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1384, in _send_request
     self.endheaders(body, encode_chunked=encode_chunked)
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1333, in endheaders
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1333, in endheaders
     self._send_output(message_body, encode_chunked=encode_chunked)
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1093, in _send_output
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1093, in _send_output
     self.send(msg)
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1037, in send
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1037, in send
     self.connect()
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1003, in connect
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1003, in connect
     self.sock = self._create_connection(
                 ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\socket.py", line 865, in create_connection
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\socket.py", line 865, in create_connection
     raise exceptions[0]
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\socket.py", line 850, in create_connection
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\socket.py", line 850, in create_connection
     sock.connect(sa)
 ConnectionRefusedError: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
 
@@ -5839,46 +5839,46 @@ Traceback (most recent call last):
   File "C:\temp\analyse_ocr_onejev\bp_fresh2\blueprints\14-onejev-invoice-triage\.venv\Lib\site-packages\qev\llamacpp.py", line 176, in _post
     with urllib.request.urlopen(req, timeout=self.timeout) as r:
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 215, in urlopen
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 215, in urlopen
     return opener.open(url, data, timeout)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 515, in open
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 515, in open
     response = self._open(req, data)
                ^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 532, in _open
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 532, in _open
     result = self._call_chain(self.handle_open, protocol, protocol +
              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 492, in _call_chain
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 492, in _call_chain
     result = func(*args)
              ^^^^^^^^^^^
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 1373, in http_open
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 1373, in http_open
     return self.do_open(http.client.HTTPConnection, req)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 1347, in do_open
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 1347, in do_open
     raise URLError(err)
 urllib.error.URLError: <urlopen error [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée>
 INFO:     127.0.0.1:48793 - "GET /health HTTP/1.1" 200 OK
 INFO:     127.0.0.1:48798 - "POST /v1/systemone HTTP/1.1" 500 Internal Server Error
 ERROR:    Exception in ASGI application
 Traceback (most recent call last):
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 1344, in do_open
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 1344, in do_open
     h.request(req.get_method(), req.selector, req.data, headers,
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1338, in request
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1338, in request
     self._send_request(method, url, body, headers, encode_chunked)
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1384, in _send_request
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1384, in _send_request
     self.endheaders(body, encode_chunked=encode_chunked)
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1333, in endheaders
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1333, in endheaders
     self._send_output(message_body, encode_chunked=encode_chunked)
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1093, in _send_output
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1093, in _send_output
     self.send(msg)
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1037, in send
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1037, in send
     self.connect()
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1003, in connect
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1003, in connect
     self.sock = self._create_connection(
                 ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\socket.py", line 865, in create_connection
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\socket.py", line 865, in create_connection
     raise exceptions[0]
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\socket.py", line 850, in create_connection
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\socket.py", line 850, in create_connection
     sock.connect(sa)
 ConnectionRefusedError: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
 
@@ -5960,45 +5960,45 @@ Traceback (most recent call last):
   File "C:\temp\analyse_ocr_onejev\bp_fresh2\blueprints\14-onejev-invoice-triage\.venv\Lib\site-packages\qev\llamacpp.py", line 176, in _post
     with urllib.request.urlopen(req, timeout=self.timeout) as r:
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 215, in urlopen
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 215, in urlopen
     return opener.open(url, data, timeout)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 515, in open
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 515, in open
     response = self._open(req, data)
                ^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 532, in _open
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 532, in _open
     result = self._call_chain(self.handle_open, protocol, protocol +
              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 492, in _call_chain
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 492, in _call_chain
     result = func(*args)
              ^^^^^^^^^^^
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 1373, in http_open
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 1373, in http_open
     return self.do_open(http.client.HTTPConnection, req)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 1347, in do_open
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 1347, in do_open
     raise URLError(err)
 urllib.error.URLError: <urlopen error [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée>
 INFO:     127.0.0.1:48803 - "POST /v1/systemone HTTP/1.1" 500 Internal Server Error
 ERROR:    Exception in ASGI application
 Traceback (most recent call last):
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 1344, in do_open
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 1344, in do_open
     h.request(req.get_method(), req.selector, req.data, headers,
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1338, in request
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1338, in request
     self._send_request(method, url, body, headers, encode_chunked)
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1384, in _send_request
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1384, in _send_request
     self.endheaders(body, encode_chunked=encode_chunked)
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1333, in endheaders
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1333, in endheaders
     self._send_output(message_body, encode_chunked=encode_chunked)
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1093, in _send_output
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1093, in _send_output
     self.send(msg)
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1037, in send
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1037, in send
     self.connect()
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1003, in connect
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1003, in connect
     self.sock = self._create_connection(
                 ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\socket.py", line 865, in create_connection
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\socket.py", line 865, in create_connection
     raise exceptions[0]
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\socket.py", line 850, in create_connection
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\socket.py", line 850, in create_connection
     sock.connect(sa)
 ConnectionRefusedError: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
 
@@ -6080,45 +6080,45 @@ Traceback (most recent call last):
   File "C:\temp\analyse_ocr_onejev\bp_fresh2\blueprints\14-onejev-invoice-triage\.venv\Lib\site-packages\qev\llamacpp.py", line 176, in _post
     with urllib.request.urlopen(req, timeout=self.timeout) as r:
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 215, in urlopen
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 215, in urlopen
     return opener.open(url, data, timeout)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 515, in open
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 515, in open
     response = self._open(req, data)
                ^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 532, in _open
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 532, in _open
     result = self._call_chain(self.handle_open, protocol, protocol +
              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 492, in _call_chain
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 492, in _call_chain
     result = func(*args)
              ^^^^^^^^^^^
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 1373, in http_open
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 1373, in http_open
     return self.do_open(http.client.HTTPConnection, req)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 1347, in do_open
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 1347, in do_open
     raise URLError(err)
 urllib.error.URLError: <urlopen error [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée>
 INFO:     127.0.0.1:48807 - "POST /v1/systemone HTTP/1.1" 500 Internal Server Error
 ERROR:    Exception in ASGI application
 Traceback (most recent call last):
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 1344, in do_open
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 1344, in do_open
     h.request(req.get_method(), req.selector, req.data, headers,
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1338, in request
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1338, in request
     self._send_request(method, url, body, headers, encode_chunked)
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1384, in _send_request
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1384, in _send_request
     self.endheaders(body, encode_chunked=encode_chunked)
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1333, in endheaders
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1333, in endheaders
     self._send_output(message_body, encode_chunked=encode_chunked)
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1093, in _send_output
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1093, in _send_output
     self.send(msg)
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1037, in send
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1037, in send
     self.connect()
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1003, in connect
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\http\client.py", line 1003, in connect
     self.sock = self._create_connection(
                 ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\socket.py", line 865, in create_connection
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\socket.py", line 865, in create_connection
     raise exceptions[0]
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\socket.py", line 850, in create_connection
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\socket.py", line 850, in create_connection
     sock.connect(sa)
 ConnectionRefusedError: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
 
@@ -6200,22 +6200,22 @@ Traceback (most recent call last):
   File "C:\temp\analyse_ocr_onejev\bp_fresh2\blueprints\14-onejev-invoice-triage\.venv\Lib\site-packages\qev\llamacpp.py", line 176, in _post
     with urllib.request.urlopen(req, timeout=self.timeout) as r:
          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 215, in urlopen
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 215, in urlopen
     return opener.open(url, data, timeout)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 515, in open
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 515, in open
     response = self._open(req, data)
                ^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 532, in _open
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 532, in _open
     result = self._call_chain(self.handle_open, protocol, protocol +
              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 492, in _call_chain
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 492, in _call_chain
     result = func(*args)
              ^^^^^^^^^^^
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 1373, in http_open
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 1373, in http_open
     return self.do_open(http.client.HTTPConnection, req)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\laurent\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 1347, in do_open
+  File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 1347, in do_open
     raise URLError(err)
 urllib.error.URLError: <urlopen error [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée>
 INFO:     127.0.0.1:48812 - "GET /health HTTP/1.1" 200 OK
