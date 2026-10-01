@@ -1,6 +1,6 @@
 # 14 - OneJev invoice triage, from zero (tested for real)
 
-Companion code for the Infra Blueprint video [OmniJev OneJev: Local AI Invoice Categorization, From Zero](https://youtu.be/EZT_4F5IiOw).
+Companion code for the Infra Blueprint video [OmniJev OneJev: Local AI Invoice Categorization, From Zero](https://youtu.be/EZT_4F5IiOw) ([30-second Short](https://youtu.be/oM1gAXkBdAc)).
 One invoice image in, six accounting decisions out, each with a calibrated probability:
 document type, expense category, payment status, VAT shown, amount band and urgency.
 100% local, no OCR step, no JSON parsing.
