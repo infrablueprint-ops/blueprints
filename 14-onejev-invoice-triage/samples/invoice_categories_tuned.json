@@ -15,7 +15,7 @@
     },
     "category": {
       "type": "choice",
-      "instructions": "Which expense category should accounting book this document under? Book a refund or credit note under the category of the original purchase.",
+      "instructions": "Which expense category should accounting book this document under?",
       "criteria": {
         "software_saas": "Software licences and SaaS subscriptions",
         "cloud_hosting": "Cloud infrastructure, servers, hosting and data transfer",
@@ -35,15 +35,15 @@
       "type": "choice",
       "instructions": "What is the payment status of this document?",
       "criteria": {
-        "paid": "Already paid or settled: marked PAID, paid by card or transfer, balance 0.00, or a receipt",
-        "due": "Still to be paid: an amount due by a future due date, or a direct debit still to come",
+        "paid": "Already paid or settled",
+        "due": "Payment is due, the due date has not passed yet",
         "overdue": "Payment is late or overdue",
         "no_payment_info": "The document does not ask for any payment"
       }
     },
     "vat_shown": {
       "type": "noul",
-      "instructions": "The document shows a VAT or sales-tax amount"
+      "instructions": "The document shows a VAT or sales-tax amount greater than zero. A tax line marked 'not applicable' or a tax ID number alone does not count."
     },
     "amount_band": {
       "type": "choice",
