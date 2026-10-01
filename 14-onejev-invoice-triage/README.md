@@ -61,20 +61,22 @@ an overdue reminder, a hand-filled invoice, a blurred phone photo) and their exp
 
 | | 72 DPI | 100 DPI | 72 DPI, tuned descriptions |
 |---|:---:|:---:|:---:|
-| Decisions right (of 78 scored) | 75 | 77 | 78 |
-| Mean time per document, 6 questions | 13.8 s | 22.0 s | 14.0 s |
+| Decisions right (of 78 scored) | 77 | 77 | 78 |
+| Mean time per document, 6 questions | 14.0 s | 20.1 s | 12.7 s |
 
-Every miss of the default run came with low confidence (41 to 58%): automate above ~70%, send the rest to a
-human. The tuned descriptions were written after looking at these same 16 documents, so 78/78 is a best
+Each run has one miss, and both came with low confidence (60% and 51%): send everything below ~70% to a
+human (some correct answers go to review too). The 72 DPI miss is the VAT question on the overdue reminder;
+the tuned description fixes it. Raw outputs are in `captures/`. The tuned descriptions were written after looking at these same 16 documents, so 78/78 is a best
 case: measure on your own documents.
 
 ## Tuning (AMD / Vulkan) and honest limits
 
-- **Flash attention off.** `llama-bench`, 3,072-token prompt: 362 tokens/s with flash attention, 2,265 without.
-  On the server, text prompts went from 244 to 1,892 tokens/s.
-- **Keep pages near 1 megapixel (72-100 DPI).** A 150 DPI A4 page is 2,176 image tokens. With default
-  settings one invoice took 94 s at 150 DPI. Without flash attention, large images make llama.cpp run the
-  vision encoder's attention on the CPU (`the CLIP graph uses unsupported operators`).
+- **Flash attention off.** `llama-bench`, 3,072-token prompt: 1,485 tokens/s with flash attention, 2,402 without
+  (`captures/c13`). On the server, a 3,045-token text prompt went from 244 to ~1,900 tokens/s.
+- **Keep pages near 1 megapixel (72-100 DPI).** A 150 DPI A4 page is 2,176 image tokens. With flash attention
+  off, one invoice took 12 s at 72 DPI, 17 s at 100 DPI and 247 s at 150 DPI (`captures/c11`). Without
+  flash attention, llama.cpp warns that the vision encoder graph uses unsupported operators
+  (`captures/c14`).
 - **One pass per question on llama.cpp.** qev's PyTorch backend shares the image prefix across questions;
   its llama.cpp backend sends one prompt per question, so each question re-encodes the image.
   Ask only the questions you need.

@@ -1,0 +1,6 @@
+$ timeout 25 llama-server -m models/OmniJev_OneJev-4B-Q4_K_M.gguf --mmproj models/mmproj-OmniJev_OneJev-4B-f16.gguf -fa off --port 8097 2>&1 | grep -E 'WARNING: the CLIP graph|performance will be suboptimal|list of unsupported ops'
+# 2026-10-01T13:56:53+02:00 | Windows 11 | AMD Radeon RX 6950 XT (Vulkan0) | llama.cpp b11193 | Git Bash
+0.04.920.934 W warmup: WARNING: the CLIP graph uses unsupported operators by the backend
+0.04.920.935 W warmup:          the performance will be suboptimal                      
+0.04.920.935 W warmup:          list of unsupported ops (backend=Vulkan0):
+exit=0 elapsed=25.5s

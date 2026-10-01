@@ -1,0 +1,6 @@
+$ llama-bench -m models/OmniJev_OneJev-4B-Q4_K_M.gguf -p 3072 -n 0 -r 1 -fa 1,0 -b 4096 -ub 512 2>&1 | grep -E '^\| (model|qwen35)'
+# 2026-10-01T13:56:44+02:00 | Windows 11 | AMD Radeon RX 6950 XT (Vulkan0) | llama.cpp b11193 | Git Bash
+| model                          |       size |     params | backend    | ngl | n_batch |  fa |            test |                  t/s |
+| qwen35 4B Q4_K - Medium        |   2.94 GiB |     4.84 B | Vulkan     |  -1 |    4096 |   1 |          pp3072 |       1484.79 ± 0.00 |
+| qwen35 4B Q4_K - Medium        |   2.94 GiB |     4.84 B | Vulkan     |  -1 |    4096 |   0 |          pp3072 |       2401.59 ± 0.00 |
+exit=0 elapsed=8.8s

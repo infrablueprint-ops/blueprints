@@ -1,0 +1,1 @@
+# server answered /health after 15.3s: {"status":"ok","model":"OmniJev_OneJev-4B-Q4_K_M","fork_mode":"llama.cpp","prompt_version":"qev-labels-v2"}
