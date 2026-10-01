@@ -1,0 +1,124 @@
+$ uv run python invoice_triage.py 'samples/invoices/*.pdf' 'samples/invoices/*.jpg' --labels samples/invoices/labels.json --dpi 100 --out output/sim_100dpi.json
+# 2026-10-01T13:46:29+02:00 | Windows 11 | AMD Radeon RX 6950 XT (Vulkan0) | llama.cpp b11193 | Git Bash
+01_nimbus_saas_invoice.pdf  (19173 ms, 6 questions)
+  doc_type        invoice                   62.5%
+  category        software_saas             95.9%
+  payment_status  paid                      97.4%
+  vat_shown       yes                       97.6%
+  amount_band     1000_to_10000             95.7%
+  urgency         just file it              16.7%   score 0.52
+02_stratus_cloud_invoice.pdf  (21726 ms, 6 questions)
+  doc_type        invoice                   99.4%
+  category        cloud_hosting             89.3%
+  payment_status  due                       94.7%
+  vat_shown       no                        98.3%
+  amount_band     100_to_1000               99.0%
+  urgency         just file it              35.6%   score 1.36
+03_kestrel_hardware_invoice.pdf  (19169 ms, 6 questions)
+  doc_type        invoice                   82.5%
+  category        hardware                  98.7%
+  payment_status  paid                      97.6%
+  vat_shown       yes                       97.6%
+  amount_band     1000_to_10000             98.5%
+  urgency         just file it              25.2%   score 0.71
+04_harbor_inn_receipt.pdf  (19098 ms, 6 questions)
+  doc_type        receipt                   89.5%
+  category        travel                    97.7%
+  payment_status  paid                      79.2%
+  vat_shown       yes                       96.9%
+  amount_band     100_to_1000               98.2%
+  urgency         just file it              33.1%   score 1.31
+05_copper_pot_receipt.pdf  (6921 ms, 6 questions)
+  doc_type        receipt                   91.0%
+  category        meals                     97.8%
+  payment_status  paid                      68.8%
+  vat_shown       yes                       93.0%
+  amount_band     100_to_1000               97.8%
+  urgency         just file it              18.5%   score 0.64
+06_volt_energy_bill.pdf  (21747 ms, 6 questions)
+  doc_type        invoice                   98.1%
+  category        utilities                 99.1%
+  payment_status  due                       83.3%
+  vat_shown       yes                       97.3%
+  amount_band     1000_to_10000             99.4%
+  urgency         pay before the due date   40.0%   score 1.63
+07_fiberlink_telecom_invoice.pdf  (21678 ms, 6 questions)
+  doc_type        invoice                   99.5%
+  category        telecom                   83.9%
+  payment_status  due                       93.0%
+  vat_shown       yes                       97.9%
+  amount_band     100_to_1000               97.4%
+  urgency         just file it              39.1%   score 1.36
+08_paperline_supplies_invoice.pdf  (19218 ms, 6 questions)
+  doc_type        invoice                   74.5%
+  category        office_supplies           99.1%
+  payment_status  paid                      97.3%
+  vat_shown       yes                       97.5%
+  amount_band     under_100                 96.2%
+  urgency         just file it              19.4%   score 0.60
+09_atlas_legal_invoice.pdf  (21788 ms, 6 questions)
+  doc_type        invoice                   99.2%
+  category        professional_services     96.5%
+  payment_status  due                       88.7%
+  vat_shown       yes                       98.2%
+  amount_band     1000_to_10000             98.7%
+  urgency         pay before the due date   35.5%   score 1.52
+10_kestrel_quote.pdf  (24276 ms, 6 questions)
+  doc_type        quote                     99.0%
+  category        hardware                  98.2%
+  payment_status  no_payment_info           93.2%
+  vat_shown       yes                       96.5%
+  amount_band     over_10000                96.6%
+  urgency         just file it              32.5%   score 0.51
+11_nimbus_credit_note.pdf  (19582 ms, 6 questions)
+  doc_type        credit_note               99.6%
+  category        software_saas             41.3%
+  payment_status  no_payment_info           49.2%
+  vat_shown       yes                       97.1%
+  amount_band     100_to_1000               95.5%
+  urgency         just file it              36.4%   score 1.30
+12_stratus_overdue_reminder.pdf  (21785 ms, 6 questions)
+  doc_type        payment_reminder          96.7%
+  category        software_saas             50.8%
+  payment_status  overdue                   98.8%
+  vat_shown       no                        98.7%
+  amount_band     1000_to_10000             93.7%
+  urgency         pay now, it is overdue    95.7%   score 2.92
+13_taxi_receipt.jpg  (17205 ms, 6 questions)
+  doc_type        receipt                   95.9%
+  category        travel                    99.2%
+  payment_status  paid                      90.3%
+  vat_shown       yes                       88.8%
+  amount_band     under_100                 98.8%
+  urgency         just file it              31.3%   score 1.13
+14_kestrel_repair_invoice.pdf  (21763 ms, 6 questions)
+  doc_type        invoice                   99.5%
+  category        repairs_maintenance       91.3%
+  payment_status  due                       90.5%
+  vat_shown       yes                       97.9%
+  amount_band     100_to_1000               98.5%
+  urgency         just file it              34.8%   score 1.39
+15_northlight_print_invoice.pdf  (21726 ms, 6 questions)
+  doc_type        invoice                   98.5%
+  category        marketing                 89.0%
+  payment_status  paid                      74.1%
+  vat_shown       yes                       97.7%
+  amount_band     100_to_1000               97.6%
+  urgency         just file it              24.4%   score 1.42
+16_rays_plumbing_handwritten.pdf  (24344 ms, 6 questions)
+  doc_type        invoice                   98.9%
+  category        repairs_maintenance       97.0%
+  payment_status  due                       88.0%
+  vat_shown       yes                       97.2%
+  amount_band     100_to_1000               99.1%
+  urgency         pay before the due date   64.1%   score 1.88
+16 documents, 6 questions each, mean 20075 ms per document
+Accuracy against labels:
+  doc_type        16/16
+  category        15/16
+  payment_status  15/15
+  vat_shown       16/16
+  amount_band     15/15
+  MISS 12_stratus_overdue_reminder.pdf: category expected cloud_hosting, got software_saas (50.8%)
+Report written to output/sim_100dpi.json
+exit=0 elapsed=322.3s
