@@ -31,6 +31,10 @@ Click any preview below to watch the complete 4K step-by-step masterclass with f
 | :---: | :---: |
 | [![Terraform Masterclass](https://img.youtube.com/vi/s9Piakl4s-g/hqdefault.jpg)](https://youtu.be/s9Piakl4s-g)<br>▶️ **[Watch 4K Masterclass](https://youtu.be/s9Piakl4s-g)** | [![JEV Brief](https://img.youtube.com/vi/P1FfigH033Q/hqdefault.jpg)](https://youtu.be/P1FfigH033Q)<br>▶️ **[Watch 4K Blueprint](https://youtu.be/P1FfigH033Q)** |
 
+| 🧾 07. OmniJev OneJev — Local Invoice Categorization |
+| :---: |
+| [![OmniJev OneJev](https://img.youtube.com/vi/EZT_4F5IiOw/hqdefault.jpg)](https://youtu.be/EZT_4F5IiOw)<br>▶️ **[Watch 4K Zero to Production](https://youtu.be/EZT_4F5IiOw)** |
+
 ---
 
 ## 🧭 Philosophy & DNA
@@ -51,6 +55,7 @@ Every blueprint in this repository follows strict industrial engineering standar
 | [`03-vaultwarden-sovereign`](./03-vaultwarden-sovereign) | 🦀 Security | Sovereign zero-cloud password manager with SQLite WAL, Argon2id & Caddy HTTPS | [📺 Watch (09:05)](https://youtu.be/dVSgt6lcXlw) | 🗓️ 20 Sept (15h) |
 | [`04-autonomous-sre-ebpf`](./04-autonomous-sre-ebpf) | ⚛️ arXiv Research | SREGym triage benchmark, live eBPF kernel probes & anti-sabotage guardrails | [📺 Watch (08:54)](https://youtu.be/yNRBWfI_qRw) | 🗓️ 15 Sept (18h) |
 | [`13-rustfs-disk-failure-lab`](./13-rustfs-disk-failure-lab) | 🦀 Storage | RustFS 1.0.0 disk-failure lab: 4 drives, wipe 2 then 3, self-heal timing, throughput bench, raw captures | [📺 Watch (08:52)](https://youtu.be/K7dxVI5F__Q) | 🗓️ 8 Nov (15h) |
+| [`14-onejev-invoice-triage`](./14-onejev-invoice-triage) | 🧾 AI Ops | OmniJev OneJev local invoice categorization, from zero: install, model download, server, 16-invoice simulation, tuning, raw captures | [📺 Watch (08:45)](https://youtu.be/EZT_4F5IiOw) | ✅ Live |
 
 ---
 
