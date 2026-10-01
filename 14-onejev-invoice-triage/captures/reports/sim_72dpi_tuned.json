@@ -1,0 +1,1311 @@
+{
+  "config": "samples/invoice_categories_tuned.json",
+  "url": "http://127.0.0.1:8000",
+  "results": {
+    "01_nimbus_saas_invoice.pdf": {
+      "answers": {
+        "doc_type": {
+          "type": "choice",
+          "choice": "invoice",
+          "probabilities": {
+            "invoice": 0.736972,
+            "receipt": 0.244689,
+            "quote": 0.003757,
+            "credit_note": 0.002286,
+            "payment_reminder": 0.008002,
+            "other": 0.004294
+          },
+          "confidence": 0.684366
+        },
+        "category": {
+          "type": "choice",
+          "choice": "software_saas",
+          "probabilities": {
+            "software_saas": 0.925784,
+            "cloud_hosting": 0.014296,
+            "hardware": 0.003835,
+            "repairs_maintenance": 0.003269,
+            "travel": 0.001517,
+            "meals": 0.000866,
+            "utilities": 0.001156,
+            "telecom": 0.003099,
+            "office_supplies": 0.017479,
+            "professional_services": 0.002945,
+            "marketing": 0.000717,
+            "other": 0.025037
+          },
+          "confidence": 0.919037
+        },
+        "payment_status": {
+          "type": "choice",
+          "choice": "paid",
+          "probabilities": {
+            "paid": 0.95956,
+            "due": 0.03242,
+            "overdue": 0.005413,
+            "no_payment_info": 0.002607
+          },
+          "confidence": 0.94608
+        },
+        "vat_shown": {
+          "type": "noul",
+          "noul": 0.949062
+        },
+        "amount_band": {
+          "type": "choice",
+          "choice": "1000_to_10000",
+          "probabilities": {
+            "under_100": 0.004528,
+            "100_to_1000": 0.11194,
+            "1000_to_10000": 0.87669,
+            "over_10000": 0.006842
+          },
+          "confidence": 0.835586
+        },
+        "urgency": {
+          "type": "score",
+          "score": 1.038802,
+          "legend": {
+            "0": "no action needed",
+            "1": "just file it",
+            "2": "pay before the due date",
+            "3": "pay now, it is overdue"
+          },
+          "probabilities": {
+            "0": 0.483459,
+            "1": 0.176764,
+            "2": 0.157293,
+            "3": 0.182484
+          },
+          "confidence": 0.0
+        }
+      },
+      "latency_ms": 11843.3
+    },
+    "02_stratus_cloud_invoice.pdf": {
+      "answers": {
+        "doc_type": {
+          "type": "choice",
+          "choice": "invoice",
+          "probabilities": {
+            "invoice": 0.992803,
+            "receipt": 0.001803,
+            "quote": 0.001228,
+            "credit_note": 0.000304,
+            "payment_reminder": 0.00298,
+            "other": 0.000882
+          },
+          "confidence": 0.991364
+        },
+        "category": {
+          "type": "choice",
+          "choice": "cloud_hosting",
+          "probabilities": {
+            "software_saas": 0.082872,
+            "cloud_hosting": 0.90401,
+            "hardware": 0.00167,
+            "repairs_maintenance": 0.000999,
+            "travel": 0.00055,
+            "meals": 0.000787,
+            "utilities": 0.000764,
+            "telecom": 0.004505,
+            "office_supplies": 0.000736,
+            "professional_services": 0.000656,
+            "marketing": 0.000326,
+            "other": 0.002126
+          },
+          "confidence": 0.895283
+        },
+        "payment_status": {
+          "type": "choice",
+          "choice": "due",
+          "probabilities": {
+            "paid": 0.006213,
+            "due": 0.945274,
+            "overdue": 0.045417,
+            "no_payment_info": 0.003096
+          },
+          "confidence": 0.927032
+        },
+        "vat_shown": {
+          "type": "noul",
+          "noul": 0.036142
+        },
+        "amount_band": {
+          "type": "choice",
+          "choice": "100_to_1000",
+          "probabilities": {
+            "under_100": 0.009102,
+            "100_to_1000": 0.985441,
+            "1000_to_10000": 0.004052,
+            "over_10000": 0.001405
+          },
+          "confidence": 0.980588
+        },
+        "urgency": {
+          "type": "score",
+          "score": 1.233805,
+          "legend": {
+            "0": "no action needed",
+            "1": "just file it",
+            "2": "pay before the due date",
+            "3": "pay now, it is overdue"
+          },
+          "probabilities": {
+            "0": 0.218712,
+            "1": 0.416741,
+            "2": 0.276579,
+            "3": 0.087969
+          },
+          "confidence": 0.328772
+        }
+      },
+      "latency_ms": 13663.5
+    },
+    "03_kestrel_hardware_invoice.pdf": {
+      "answers": {
+        "doc_type": {
+          "type": "choice",
+          "choice": "invoice",
+          "probabilities": {
+            "invoice": 0.822946,
+            "receipt": 0.15809,
+            "quote": 0.003422,
+            "credit_note": 0.001854,
+            "payment_reminder": 0.008828,
+            "other": 0.004859
+          },
+          "confidence": 0.787536
+        },
+        "category": {
+          "type": "choice",
+          "choice": "hardware",
+          "probabilities": {
+            "software_saas": 0.001779,
+            "cloud_hosting": 0.001495,
+            "hardware": 0.979665,
+            "repairs_maintenance": 0.004804,
+            "travel": 0.000395,
+            "meals": 0.000272,
+            "utilities": 0.000501,
+            "telecom": 0.000477,
+            "office_supplies": 0.004547,
+            "professional_services": 0.000856,
+            "marketing": 0.000397,
+            "other": 0.004813
+          },
+          "confidence": 0.977816
+        },
+        "payment_status": {
+          "type": "choice",
+          "choice": "paid",
+          "probabilities": {
+            "paid": 0.946836,
+            "due": 0.040755,
+            "overdue": 0.009853,
+            "no_payment_info": 0.002556
+          },
+          "confidence": 0.929115
+        },
+        "vat_shown": {
+          "type": "noul",
+          "noul": 0.941185
+        },
+        "amount_band": {
+          "type": "choice",
+          "choice": "1000_to_10000",
+          "probabilities": {
+            "under_100": 0.003387,
+            "100_to_1000": 0.007781,
+            "1000_to_10000": 0.969779,
+            "over_10000": 0.019053
+          },
+          "confidence": 0.959705
+        },
+        "urgency": {
+          "type": "score",
+          "score": 0.914681,
+          "legend": {
+            "0": "no action needed",
+            "1": "just file it",
+            "2": "pay before the due date",
+            "3": "pay now, it is overdue"
+          },
+          "probabilities": {
+            "0": 0.520776,
+            "1": 0.19142,
+            "2": 0.140152,
+            "3": 0.147652
+          },
+          "confidence": 0.085319
+        }
+      },
+      "latency_ms": 11729.5
+    },
+    "04_harbor_inn_receipt.pdf": {
+      "answers": {
+        "doc_type": {
+          "type": "choice",
+          "choice": "receipt",
+          "probabilities": {
+            "invoice": 0.129146,
+            "receipt": 0.84254,
+            "quote": 0.004377,
+            "credit_note": 0.002608,
+            "payment_reminder": 0.002218,
+            "other": 0.01911
+          },
+          "confidence": 0.811049
+        },
+        "category": {
+          "type": "choice",
+          "choice": "travel",
+          "probabilities": {
+            "software_saas": 0.000577,
+            "cloud_hosting": 0.000383,
+            "hardware": 0.00034,
+            "repairs_maintenance": 0.00041,
+            "travel": 0.967272,
+            "meals": 0.011775,
+            "utilities": 0.0011,
+            "telecom": 0.000402,
+            "office_supplies": 0.000676,
+            "professional_services": 0.000908,
+            "marketing": 0.000438,
+            "other": 0.015719
+          },
+          "confidence": 0.964296
+        },
+        "payment_status": {
+          "type": "choice",
+          "choice": "paid",
+          "probabilities": {
+            "paid": 0.584665,
+            "due": 0.247122,
+            "overdue": 0.057619,
+            "no_payment_info": 0.110594
+          },
+          "confidence": 0.44622
+        },
+        "vat_shown": {
+          "type": "noul",
+          "noul": 0.953877
+        },
+        "amount_band": {
+          "type": "choice",
+          "choice": "100_to_1000",
+          "probabilities": {
+            "under_100": 0.009518,
+            "100_to_1000": 0.983977,
+            "1000_to_10000": 0.004654,
+            "over_10000": 0.001851
+          },
+          "confidence": 0.978637
+        },
+        "urgency": {
+          "type": "score",
+          "score": 1.412511,
+          "legend": {
+            "0": "no action needed",
+            "1": "just file it",
+            "2": "pay before the due date",
+            "3": "pay now, it is overdue"
+          },
+          "probabilities": {
+            "0": 0.225013,
+            "1": 0.289184,
+            "2": 0.334081,
+            "3": 0.151721
+          },
+          "confidence": 0.109068
+        }
+      },
+      "latency_ms": 11597.2
+    },
+    "05_copper_pot_receipt.pdf": {
+      "answers": {
+        "doc_type": {
+          "type": "choice",
+          "choice": "receipt",
+          "probabilities": {
+            "invoice": 0.081448,
+            "receipt": 0.885831,
+            "quote": 0.00466,
+            "credit_note": 0.002328,
+            "payment_reminder": 0.002027,
+            "other": 0.023706
+          },
+          "confidence": 0.862997
+        },
+        "category": {
+          "type": "choice",
+          "choice": "meals",
+          "probabilities": {
+            "software_saas": 0.000317,
+            "cloud_hosting": 0.000371,
+            "hardware": 0.000332,
+            "repairs_maintenance": 0.000511,
+            "travel": 0.002215,
+            "meals": 0.973417,
+            "utilities": 0.000325,
+            "telecom": 0.000355,
+            "office_supplies": 0.000961,
+            "professional_services": 0.000253,
+            "marketing": 0.000146,
+            "other": 0.020797
+          },
+          "confidence": 0.971
+        },
+        "payment_status": {
+          "type": "choice",
+          "choice": "paid",
+          "probabilities": {
+            "paid": 0.67689,
+            "due": 0.19817,
+            "overdue": 0.029012,
+            "no_payment_info": 0.095928
+          },
+          "confidence": 0.569187
+        },
+        "vat_shown": {
+          "type": "noul",
+          "noul": 0.920667
+        },
+        "amount_band": {
+          "type": "choice",
+          "choice": "100_to_1000",
+          "probabilities": {
+            "under_100": 0.015626,
+            "100_to_1000": 0.980621,
+            "1000_to_10000": 0.00244,
+            "over_10000": 0.001313
+          },
+          "confidence": 0.974162
+        },
+        "urgency": {
+          "type": "score",
+          "score": 1.043315,
+          "legend": {
+            "0": "no action needed",
+            "1": "just file it",
+            "2": "pay before the due date",
+            "3": "pay now, it is overdue"
+          },
+          "probabilities": {
+            "0": 0.400011,
+            "1": 0.27058,
+            "2": 0.215492,
+            "3": 0.113917
+          },
+          "confidence": 0.0
+        }
+      },
+      "latency_ms": 5837.5
+    },
+    "06_volt_energy_bill.pdf": {
+      "answers": {
+        "doc_type": {
+          "type": "choice",
+          "choice": "invoice",
+          "probabilities": {
+            "invoice": 0.975798,
+            "receipt": 0.002667,
+            "quote": 0.00144,
+            "credit_note": 0.000539,
+            "payment_reminder": 0.012274,
+            "other": 0.007281
+          },
+          "confidence": 0.970958
+        },
+        "category": {
+          "type": "choice",
+          "choice": "utilities",
+          "probabilities": {
+            "software_saas": 0.00019,
+            "cloud_hosting": 0.000351,
+            "hardware": 0.000111,
+            "repairs_maintenance": 0.000345,
+            "travel": 0.00015,
+            "meals": 0.000267,
+            "utilities": 0.990226,
+            "telecom": 0.006575,
+            "office_supplies": 0.000193,
+            "professional_services": 0.00011,
+            "marketing": 6.7e-05,
+            "other": 0.001414
+          },
+          "confidence": 0.989338
+        },
+        "payment_status": {
+          "type": "choice",
+          "choice": "due",
+          "probabilities": {
+            "paid": 0.018691,
+            "due": 0.81678,
+            "overdue": 0.146462,
+            "no_payment_info": 0.018067
+          },
+          "confidence": 0.755706
+        },
+        "vat_shown": {
+          "type": "noul",
+          "noul": 0.939644
+        },
+        "amount_band": {
+          "type": "choice",
+          "choice": "1000_to_10000",
+          "probabilities": {
+            "under_100": 0.001462,
+            "100_to_1000": 0.025401,
+            "1000_to_10000": 0.971663,
+            "over_10000": 0.001473
+          },
+          "confidence": 0.962218
+        },
+        "urgency": {
+          "type": "score",
+          "score": 1.540331,
+          "legend": {
+            "0": "no action needed",
+            "1": "just file it",
+            "2": "pay before the due date",
+            "3": "pay now, it is overdue"
+          },
+          "probabilities": {
+            "0": 0.157888,
+            "1": 0.325594,
+            "2": 0.334818,
+            "3": 0.1817
+          },
+          "confidence": 0.17693
+        }
+      },
+      "latency_ms": 13131.6
+    },
+    "07_fiberlink_telecom_invoice.pdf": {
+      "answers": {
+        "doc_type": {
+          "type": "choice",
+          "choice": "invoice",
+          "probabilities": {
+            "invoice": 0.993937,
+            "receipt": 0.001881,
+            "quote": 0.001115,
+            "credit_note": 0.000279,
+            "payment_reminder": 0.00187,
+            "other": 0.000917
+          },
+          "confidence": 0.992724
+        },
+        "category": {
+          "type": "choice",
+          "choice": "telecom",
+          "probabilities": {
+            "software_saas": 0.00473,
+            "cloud_hosting": 0.080644,
+            "hardware": 0.009366,
+            "repairs_maintenance": 0.00229,
+            "travel": 0.000655,
+            "meals": 0.00121,
+            "utilities": 0.00475,
+            "telecom": 0.883476,
+            "office_supplies": 0.003106,
+            "professional_services": 0.001279,
+            "marketing": 0.000667,
+            "other": 0.007827
+          },
+          "confidence": 0.872883
+        },
+        "payment_status": {
+          "type": "choice",
+          "choice": "due",
+          "probabilities": {
+            "paid": 0.007888,
+            "due": 0.90488,
+            "overdue": 0.081776,
+            "no_payment_info": 0.005456
+          },
+          "confidence": 0.873173
+        },
+        "vat_shown": {
+          "type": "noul",
+          "noul": 0.952378
+        },
+        "amount_band": {
+          "type": "choice",
+          "choice": "100_to_1000",
+          "probabilities": {
+            "under_100": 0.076997,
+            "100_to_1000": 0.91581,
+            "1000_to_10000": 0.00469,
+            "over_10000": 0.002503
+          },
+          "confidence": 0.887746
+        },
+        "urgency": {
+          "type": "score",
+          "score": 1.31952,
+          "legend": {
+            "0": "no action needed",
+            "1": "just file it",
+            "2": "pay before the due date",
+            "3": "pay now, it is overdue"
+          },
+          "probabilities": {
+            "0": 0.214707,
+            "1": 0.368961,
+            "2": 0.298436,
+            "3": 0.117896
+          },
+          "confidence": 0.251065
+        }
+      },
+      "latency_ms": 13169.8
+    },
+    "08_paperline_supplies_invoice.pdf": {
+      "answers": {
+        "doc_type": {
+          "type": "choice",
+          "choice": "invoice",
+          "probabilities": {
+            "invoice": 0.818069,
+            "receipt": 0.166246,
+            "quote": 0.003075,
+            "credit_note": 0.002027,
+            "payment_reminder": 0.006288,
+            "other": 0.004295
+          },
+          "confidence": 0.781683
+        },
+        "category": {
+          "type": "choice",
+          "choice": "office_supplies",
+          "probabilities": {
+            "software_saas": 0.000467,
+            "cloud_hosting": 0.000274,
+            "hardware": 0.013288,
+            "repairs_maintenance": 0.001294,
+            "travel": 0.000472,
+            "meals": 0.000419,
+            "utilities": 0.000921,
+            "telecom": 0.000267,
+            "office_supplies": 0.976322,
+            "professional_services": 0.000384,
+            "marketing": 0.000475,
+            "other": 0.005417
+          },
+          "confidence": 0.974169
+        },
+        "payment_status": {
+          "type": "choice",
+          "choice": "paid",
+          "probabilities": {
+            "paid": 0.964154,
+            "due": 0.02783,
+            "overdue": 0.006619,
+            "no_payment_info": 0.001397
+          },
+          "confidence": 0.952205
+        },
+        "vat_shown": {
+          "type": "noul",
+          "noul": 0.946319
+        },
+        "amount_band": {
+          "type": "choice",
+          "choice": "under_100",
+          "probabilities": {
+            "under_100": 0.959712,
+            "100_to_1000": 0.03507,
+            "1000_to_10000": 0.00294,
+            "over_10000": 0.002278
+          },
+          "confidence": 0.946283
+        },
+        "urgency": {
+          "type": "score",
+          "score": 0.787859,
+          "legend": {
+            "0": "no action needed",
+            "1": "just file it",
+            "2": "pay before the due date",
+            "3": "pay now, it is overdue"
+          },
+          "probabilities": {
+            "0": 0.570739,
+            "1": 0.196617,
+            "2": 0.106692,
+            "3": 0.125953
+          },
+          "confidence": 0.212141
+        }
+      },
+      "latency_ms": 11642.4
+    },
+    "09_atlas_legal_invoice.pdf": {
+      "answers": {
+        "doc_type": {
+          "type": "choice",
+          "choice": "invoice",
+          "probabilities": {
+            "invoice": 0.983948,
+            "receipt": 0.001527,
+            "quote": 0.006328,
+            "credit_note": 0.000434,
+            "payment_reminder": 0.005369,
+            "other": 0.002394
+          },
+          "confidence": 0.980738
+        },
+        "category": {
+          "type": "choice",
+          "choice": "professional_services",
+          "probabilities": {
+            "software_saas": 0.037236,
+            "cloud_hosting": 0.000932,
+            "hardware": 0.000414,
+            "repairs_maintenance": 0.00094,
+            "travel": 0.000365,
+            "meals": 0.000384,
+            "utilities": 0.000276,
+            "telecom": 0.000416,
+            "office_supplies": 0.000384,
+            "professional_services": 0.950546,
+            "marketing": 0.000291,
+            "other": 0.007816
+          },
+          "confidence": 0.946051
+        },
+        "payment_status": {
+          "type": "choice",
+          "choice": "due",
+          "probabilities": {
+            "paid": 0.011233,
+            "due": 0.823949,
+            "overdue": 0.155445,
+            "no_payment_info": 0.009374
+          },
+          "confidence": 0.765265
+        },
+        "vat_shown": {
+          "type": "noul",
+          "noul": 0.951703
+        },
+        "amount_band": {
+          "type": "choice",
+          "choice": "1000_to_10000",
+          "probabilities": {
+            "under_100": 0.004336,
+            "100_to_1000": 0.057772,
+            "1000_to_10000": 0.932718,
+            "over_10000": 0.005174
+          },
+          "confidence": 0.910291
+        },
+        "urgency": {
+          "type": "score",
+          "score": 1.507511,
+          "legend": {
+            "0": "no action needed",
+            "1": "just file it",
+            "2": "pay before the due date",
+            "3": "pay now, it is overdue"
+          },
+          "probabilities": {
+            "0": 0.168283,
+            "1": 0.316883,
+            "2": 0.353873,
+            "3": 0.160961
+          },
+          "confidence": 0.185589
+        }
+      },
+      "latency_ms": 13197.2
+    },
+    "10_kestrel_quote.pdf": {
+      "answers": {
+        "doc_type": {
+          "type": "choice",
+          "choice": "quote",
+          "probabilities": {
+            "invoice": 0.005788,
+            "receipt": 0.000837,
+            "quote": 0.990802,
+            "credit_note": 0.000382,
+            "payment_reminder": 0.000503,
+            "other": 0.001689
+          },
+          "confidence": 0.988963
+        },
+        "category": {
+          "type": "choice",
+          "choice": "hardware",
+          "probabilities": {
+            "software_saas": 0.002574,
+            "cloud_hosting": 0.001802,
+            "hardware": 0.979339,
+            "repairs_maintenance": 0.004993,
+            "travel": 0.000356,
+            "meals": 0.000229,
+            "utilities": 0.000433,
+            "telecom": 0.000559,
+            "office_supplies": 0.002469,
+            "professional_services": 0.001332,
+            "marketing": 0.000317,
+            "other": 0.005597
+          },
+          "confidence": 0.97746
+        },
+        "payment_status": {
+          "type": "choice",
+          "choice": "no_payment_info",
+          "probabilities": {
+            "paid": 0.008881,
+            "due": 0.07791,
+            "overdue": 0.014173,
+            "no_payment_info": 0.899036
+          },
+          "confidence": 0.865381
+        },
+        "vat_shown": {
+          "type": "noul",
+          "noul": 0.95449
+        },
+        "amount_band": {
+          "type": "choice",
+          "choice": "over_10000",
+          "probabilities": {
+            "under_100": 0.000975,
+            "100_to_1000": 0.002124,
+            "1000_to_10000": 0.067804,
+            "over_10000": 0.929097
+          },
+          "confidence": 0.905463
+        },
+        "urgency": {
+          "type": "score",
+          "score": 0.813178,
+          "legend": {
+            "0": "no action needed",
+            "1": "just file it",
+            "2": "pay before the due date",
+            "3": "pay now, it is overdue"
+          },
+          "probabilities": {
+            "0": 0.38511,
+            "1": 0.438507,
+            "2": 0.154478,
+            "3": 0.021905
+          },
+          "confidence": 0.416602
+        }
+      },
+      "latency_ms": 13173.8
+    },
+    "11_nimbus_credit_note.pdf": {
+      "answers": {
+        "doc_type": {
+          "type": "choice",
+          "choice": "credit_note",
+          "probabilities": {
+            "invoice": 0.001757,
+            "receipt": 0.000766,
+            "quote": 0.000452,
+            "credit_note": 0.994406,
+            "payment_reminder": 0.000356,
+            "other": 0.002264
+          },
+          "confidence": 0.993287
+        },
+        "category": {
+          "type": "choice",
+          "choice": "software_saas",
+          "probabilities": {
+            "software_saas": 0.364468,
+            "cloud_hosting": 0.01073,
+            "hardware": 0.017328,
+            "repairs_maintenance": 0.071414,
+            "travel": 0.004333,
+            "meals": 0.004805,
+            "utilities": 0.005284,
+            "telecom": 0.003187,
+            "office_supplies": 0.150415,
+            "professional_services": 0.018164,
+            "marketing": 0.002763,
+            "other": 0.34711
+          },
+          "confidence": 0.306693
+        },
+        "payment_status": {
+          "type": "choice",
+          "choice": "no_payment_info",
+          "probabilities": {
+            "paid": 0.415677,
+            "due": 0.093517,
+            "overdue": 0.031098,
+            "no_payment_info": 0.459709
+          },
+          "confidence": 0.279612
+        },
+        "vat_shown": {
+          "type": "noul",
+          "noul": 0.9387
+        },
+        "amount_band": {
+          "type": "choice",
+          "choice": "100_to_1000",
+          "probabilities": {
+            "under_100": 0.051758,
+            "100_to_1000": 0.90167,
+            "1000_to_10000": 0.04104,
+            "over_10000": 0.005532
+          },
+          "confidence": 0.868893
+        },
+        "urgency": {
+          "type": "score",
+          "score": 1.189559,
+          "legend": {
+            "0": "no action needed",
+            "1": "just file it",
+            "2": "pay before the due date",
+            "3": "pay now, it is overdue"
+          },
+          "probabilities": {
+            "0": 0.283145,
+            "1": 0.402564,
+            "2": 0.155878,
+            "3": 0.158413
+          },
+          "confidence": 0.24415
+        }
+      },
+      "latency_ms": 12096.0
+    },
+    "12_stratus_overdue_reminder.pdf": {
+      "answers": {
+        "doc_type": {
+          "type": "choice",
+          "choice": "payment_reminder",
+          "probabilities": {
+            "invoice": 0.0534,
+            "receipt": 0.001261,
+            "quote": 0.000727,
+            "credit_note": 0.000401,
+            "payment_reminder": 0.940031,
+            "other": 0.004181
+          },
+          "confidence": 0.928037
+        },
+        "category": {
+          "type": "choice",
+          "choice": "cloud_hosting",
+          "probabilities": {
+            "software_saas": 0.278963,
+            "cloud_hosting": 0.439226,
+            "hardware": 0.009191,
+            "repairs_maintenance": 0.017973,
+            "travel": 0.003136,
+            "meals": 0.004208,
+            "utilities": 0.007356,
+            "telecom": 0.009979,
+            "office_supplies": 0.006843,
+            "professional_services": 0.007484,
+            "marketing": 0.001902,
+            "other": 0.213737
+          },
+          "confidence": 0.388247
+        },
+        "payment_status": {
+          "type": "choice",
+          "choice": "overdue",
+          "probabilities": {
+            "paid": 0.001269,
+            "due": 0.01887,
+            "overdue": 0.978913,
+            "no_payment_info": 0.000948
+          },
+          "confidence": 0.971883
+        },
+        "vat_shown": {
+          "type": "noul",
+          "noul": 0.343161
+        },
+        "amount_band": {
+          "type": "choice",
+          "choice": "1000_to_10000",
+          "probabilities": {
+            "under_100": 0.007473,
+            "100_to_1000": 0.234115,
+            "1000_to_10000": 0.751858,
+            "over_10000": 0.006554
+          },
+          "confidence": 0.669144
+        },
+        "urgency": {
+          "type": "score",
+          "score": 2.93125,
+          "legend": {
+            "0": "no action needed",
+            "1": "just file it",
+            "2": "pay before the due date",
+            "3": "pay now, it is overdue"
+          },
+          "probabilities": {
+            "0": 0.007196,
+            "1": 0.014455,
+            "2": 0.018252,
+            "3": 0.960097
+          },
+          "confidence": 0.93125
+        }
+      },
+      "latency_ms": 13107.7
+    },
+    "13_taxi_receipt.jpg": {
+      "answers": {
+        "doc_type": {
+          "type": "choice",
+          "choice": "receipt",
+          "probabilities": {
+            "invoice": 0.030369,
+            "receipt": 0.959384,
+            "quote": 0.001789,
+            "credit_note": 0.00069,
+            "payment_reminder": 0.000581,
+            "other": 0.007187
+          },
+          "confidence": 0.951261
+        },
+        "category": {
+          "type": "choice",
+          "choice": "travel",
+          "probabilities": {
+            "software_saas": 0.000234,
+            "cloud_hosting": 0.000202,
+            "hardware": 0.000169,
+            "repairs_maintenance": 0.000288,
+            "travel": 0.992456,
+            "meals": 0.000791,
+            "utilities": 0.000501,
+            "telecom": 0.000207,
+            "office_supplies": 0.000386,
+            "professional_services": 0.000183,
+            "marketing": 0.000102,
+            "other": 0.004481
+          },
+          "confidence": 0.99177
+        },
+        "payment_status": {
+          "type": "choice",
+          "choice": "paid",
+          "probabilities": {
+            "paid": 0.901198,
+            "due": 0.065717,
+            "overdue": 0.011778,
+            "no_payment_info": 0.021307
+          },
+          "confidence": 0.868264
+        },
+        "vat_shown": {
+          "type": "noul",
+          "noul": 0.911525
+        },
+        "amount_band": {
+          "type": "choice",
+          "choice": "under_100",
+          "probabilities": {
+            "under_100": 0.98845,
+            "100_to_1000": 0.008372,
+            "1000_to_10000": 0.001935,
+            "over_10000": 0.001243
+          },
+          "confidence": 0.9846
+        },
+        "urgency": {
+          "type": "score",
+          "score": 1.129917,
+          "legend": {
+            "0": "no action needed",
+            "1": "just file it",
+            "2": "pay before the due date",
+            "3": "pay now, it is overdue"
+          },
+          "probabilities": {
+            "0": 0.334883,
+            "1": 0.316224,
+            "2": 0.232986,
+            "3": 0.115907
+          },
+          "confidence": 0.0
+        }
+      },
+      "latency_ms": 19284.1
+    },
+    "14_kestrel_repair_invoice.pdf": {
+      "answers": {
+        "doc_type": {
+          "type": "choice",
+          "choice": "invoice",
+          "probabilities": {
+            "invoice": 0.99406,
+            "receipt": 0.001458,
+            "quote": 0.001577,
+            "credit_note": 0.000264,
+            "payment_reminder": 0.002,
+            "other": 0.000643
+          },
+          "confidence": 0.992872
+        },
+        "category": {
+          "type": "choice",
+          "choice": "repairs_maintenance",
+          "probabilities": {
+            "software_saas": 0.001125,
+            "cloud_hosting": 0.001076,
+            "hardware": 0.097805,
+            "repairs_maintenance": 0.878961,
+            "travel": 0.000741,
+            "meals": 0.001024,
+            "utilities": 0.001066,
+            "telecom": 0.000571,
+            "office_supplies": 0.001235,
+            "professional_services": 0.00668,
+            "marketing": 0.000625,
+            "other": 0.009091
+          },
+          "confidence": 0.867958
+        },
+        "payment_status": {
+          "type": "choice",
+          "choice": "due",
+          "probabilities": {
+            "paid": 0.009297,
+            "due": 0.909991,
+            "overdue": 0.072122,
+            "no_payment_info": 0.00859
+          },
+          "confidence": 0.879988
+        },
+        "vat_shown": {
+          "type": "noul",
+          "noul": 0.947881
+        },
+        "amount_band": {
+          "type": "choice",
+          "choice": "100_to_1000",
+          "probabilities": {
+            "under_100": 0.014493,
+            "100_to_1000": 0.981268,
+            "1000_to_10000": 0.002928,
+            "over_10000": 0.001312
+          },
+          "confidence": 0.975024
+        },
+        "urgency": {
+          "type": "score",
+          "score": 1.310287,
+          "legend": {
+            "0": "no action needed",
+            "1": "just file it",
+            "2": "pay before the due date",
+            "3": "pay now, it is overdue"
+          },
+          "probabilities": {
+            "0": 0.225207,
+            "1": 0.358138,
+            "2": 0.297817,
+            "3": 0.118839
+          },
+          "confidence": 0.239299
+        }
+      },
+      "latency_ms": 13486.5
+    },
+    "15_northlight_print_invoice.pdf": {
+      "answers": {
+        "doc_type": {
+          "type": "choice",
+          "choice": "invoice",
+          "probabilities": {
+            "invoice": 0.991616,
+            "receipt": 0.00349,
+            "quote": 0.001074,
+            "credit_note": 0.000312,
+            "payment_reminder": 0.002739,
+            "other": 0.000768
+          },
+          "confidence": 0.98994
+        },
+        "category": {
+          "type": "choice",
+          "choice": "marketing",
+          "probabilities": {
+            "software_saas": 0.001927,
+            "cloud_hosting": 0.000838,
+            "hardware": 0.003383,
+            "repairs_maintenance": 0.002062,
+            "travel": 0.001243,
+            "meals": 0.000992,
+            "utilities": 0.001058,
+            "telecom": 0.000804,
+            "office_supplies": 0.143617,
+            "professional_services": 0.001736,
+            "marketing": 0.827425,
+            "other": 0.014914
+          },
+          "confidence": 0.811737
+        },
+        "payment_status": {
+          "type": "choice",
+          "choice": "paid",
+          "probabilities": {
+            "paid": 0.621248,
+            "due": 0.318006,
+            "overdue": 0.042403,
+            "no_payment_info": 0.018343
+          },
+          "confidence": 0.494997
+        },
+        "vat_shown": {
+          "type": "noul",
+          "noul": 0.95616
+        },
+        "amount_band": {
+          "type": "choice",
+          "choice": "100_to_1000",
+          "probabilities": {
+            "under_100": 0.011431,
+            "100_to_1000": 0.981685,
+            "1000_to_10000": 0.004996,
+            "over_10000": 0.001888
+          },
+          "confidence": 0.97558
+        },
+        "urgency": {
+          "type": "score",
+          "score": 1.345449,
+          "legend": {
+            "0": "no action needed",
+            "1": "just file it",
+            "2": "pay before the due date",
+            "3": "pay now, it is overdue"
+          },
+          "probabilities": {
+            "0": 0.21979,
+            "1": 0.342942,
+            "2": 0.309297,
+            "3": 0.127971
+          },
+          "confidence": 0.214971
+        }
+      },
+      "latency_ms": 13087.3
+    },
+    "16_rays_plumbing_handwritten.pdf": {
+      "answers": {
+        "doc_type": {
+          "type": "choice",
+          "choice": "invoice",
+          "probabilities": {
+            "invoice": 0.991118,
+            "receipt": 0.002852,
+            "quote": 0.003139,
+            "credit_note": 0.000266,
+            "payment_reminder": 0.001659,
+            "other": 0.000965
+          },
+          "confidence": 0.989342
+        },
+        "category": {
+          "type": "choice",
+          "choice": "repairs_maintenance",
+          "probabilities": {
+            "software_saas": 0.000257,
+            "cloud_hosting": 0.000297,
+            "hardware": 0.001247,
+            "repairs_maintenance": 0.965055,
+            "travel": 0.001006,
+            "meals": 0.001009,
+            "utilities": 0.002525,
+            "telecom": 0.000263,
+            "office_supplies": 0.000567,
+            "professional_services": 0.00189,
+            "marketing": 0.000136,
+            "other": 0.02575
+          },
+          "confidence": 0.961878
+        },
+        "payment_status": {
+          "type": "choice",
+          "choice": "due",
+          "probabilities": {
+            "paid": 0.011463,
+            "due": 0.891583,
+            "overdue": 0.050775,
+            "no_payment_info": 0.046179
+          },
+          "confidence": 0.855443
+        },
+        "vat_shown": {
+          "type": "noul",
+          "noul": 0.956912
+        },
+        "amount_band": {
+          "type": "choice",
+          "choice": "100_to_1000",
+          "probabilities": {
+            "under_100": 0.009179,
+            "100_to_1000": 0.986897,
+            "1000_to_10000": 0.002697,
+            "over_10000": 0.001227
+          },
+          "confidence": 0.982529
+        },
+        "urgency": {
+          "type": "score",
+          "score": 1.82836,
+          "legend": {
+            "0": "no action needed",
+            "1": "just file it",
+            "2": "pay before the due date",
+            "3": "pay now, it is overdue"
+          },
+          "probabilities": {
+            "0": 0.076037,
+            "1": 0.170449,
+            "2": 0.602632,
+            "3": 0.150882
+          },
+          "confidence": 0.526595
+        }
+      },
+      "latency_ms": 13137.4
+    }
+  },
+  "score": {
+    "per_question": {
+      "doc_type": {
+        "correct": 16,
+        "total": 16
+      },
+      "category": {
+        "correct": 16,
+        "total": 16
+      },
+      "payment_status": {
+        "correct": 15,
+        "total": 15
+      },
+      "vat_shown": {
+        "correct": 16,
+        "total": 16
+      },
+      "amount_band": {
+        "correct": 15,
+        "total": 15
+      }
+    },
+    "misses": []
+  }
+}

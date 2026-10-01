@@ -1,0 +1,5 @@
+$ llama-server -m models/OmniJev_OneJev-4B-Q4_K_M.gguf -dev Vulkan1 2>&1 | head -3
+# 2026-10-01T12:01:11+02:00 | Windows 11 | AMD Radeon RX 6950 XT (Vulkan0) | llama.cpp b11193 | Git Bash
+0.00.000.531 I srv  llama_server: initializing ...
+error while handling argument "-dev": invalid device: Vulkan1
+exit=0 elapsed=0.1s

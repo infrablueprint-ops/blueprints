@@ -1,0 +1,12 @@
+$ uv run python invoice_triage.py samples/invoices/12_stratus_overdue_reminder.pdf --dpi 72
+# 2026-10-01T12:01:29+02:00 | Windows 11 | AMD Radeon RX 6950 XT (Vulkan0) | llama.cpp b11193 | Git Bash
+12_stratus_overdue_reminder.pdf  (14519 ms, 6 questions)
+  doc_type        payment_reminder          94.0%
+  category        cloud_hosting             43.9%
+  payment_status  overdue                   97.8%
+  vat_shown       yes                       60.3%
+  amount_band     1000_to_10000             75.2%
+  urgency         pay now, it is overdue    96.0%   score 2.93
+1 documents, 6 questions each, mean 14519 ms per document
+Report written to output/invoice_triage.json
+exit=0 elapsed=15.6s

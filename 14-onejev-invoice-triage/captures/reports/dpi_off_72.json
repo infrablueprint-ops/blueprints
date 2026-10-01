@@ -1,0 +1,86 @@
+{
+  "config": "invoice_categories.json",
+  "url": "http://127.0.0.1:8000",
+  "results": {
+    "01_nimbus_saas_invoice.pdf": {
+      "answers": {
+        "doc_type": {
+          "type": "choice",
+          "choice": "invoice",
+          "probabilities": {
+            "invoice": 0.736972,
+            "receipt": 0.244689,
+            "quote": 0.003757,
+            "credit_note": 0.002286,
+            "payment_reminder": 0.008002,
+            "other": 0.004294
+          },
+          "confidence": 0.684366
+        },
+        "category": {
+          "type": "choice",
+          "choice": "software_saas",
+          "probabilities": {
+            "software_saas": 0.925784,
+            "cloud_hosting": 0.014296,
+            "hardware": 0.003835,
+            "repairs_maintenance": 0.003269,
+            "travel": 0.001517,
+            "meals": 0.000866,
+            "utilities": 0.001156,
+            "telecom": 0.003099,
+            "office_supplies": 0.017479,
+            "professional_services": 0.002945,
+            "marketing": 0.000717,
+            "other": 0.025037
+          },
+          "confidence": 0.919037
+        },
+        "payment_status": {
+          "type": "choice",
+          "choice": "paid",
+          "probabilities": {
+            "paid": 0.959861,
+            "due": 0.032026,
+            "overdue": 0.005519,
+            "no_payment_info": 0.002594
+          },
+          "confidence": 0.946482
+        },
+        "vat_shown": {
+          "type": "noul",
+          "noul": 0.967922
+        },
+        "amount_band": {
+          "type": "choice",
+          "choice": "1000_to_10000",
+          "probabilities": {
+            "under_100": 0.004528,
+            "100_to_1000": 0.11194,
+            "1000_to_10000": 0.87669,
+            "over_10000": 0.006842
+          },
+          "confidence": 0.835586
+        },
+        "urgency": {
+          "type": "score",
+          "score": 1.038802,
+          "legend": {
+            "0": "no action needed",
+            "1": "just file it",
+            "2": "pay before the due date",
+            "3": "pay now, it is overdue"
+          },
+          "probabilities": {
+            "0": 0.483459,
+            "1": 0.176764,
+            "2": 0.157293,
+            "3": 0.182484
+          },
+          "confidence": 0.0
+        }
+      },
+      "latency_ms": 12110.9
+    }
+  }
+}
