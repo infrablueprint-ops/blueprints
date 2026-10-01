@@ -151,7 +151,7 @@ Traceback (most recent call last):
   File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\socket.py", line 720, in readinto
     return self._sock.recv_into(b)
            ^^^^^^^^^^^^^^^^^^^^^^^
-ConnectionResetError: [WinError 10054] Une connexion existante a dû être fermée par l’hôte distant
+ConnectionResetError: [WinError 10054] Une connexion existante a dÃ» Ãªtre fermÃ©e par lâ€™hÃ´te distant
 INFO:     127.0.0.1:41995 - "POST /v1/systemone HTTP/1.1" 500 Internal Server Error
 ERROR:    Exception in ASGI application
 Traceback (most recent call last):
@@ -174,7 +174,7 @@ Traceback (most recent call last):
     raise exceptions[0]
   File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\socket.py", line 850, in create_connection
     sock.connect(sa)
-ConnectionRefusedError: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
+ConnectionRefusedError: [WinError 10061] Aucune connexion nâ€™a pu Ãªtre Ã©tablie car lâ€™ordinateur cible lâ€™a expressÃ©ment refusÃ©e
 
 The above exception was the direct cause of the following exception:
 
@@ -271,7 +271,7 @@ Traceback (most recent call last):
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 1347, in do_open
     raise URLError(err)
-urllib.error.URLError: <urlopen error [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée>
+urllib.error.URLError: <urlopen error [WinError 10061] Aucune connexion nâ€™a pu Ãªtre Ã©tablie car lâ€™ordinateur cible lâ€™a expressÃ©ment refusÃ©e>
 INFO:     127.0.0.1:41997 - "POST /v1/systemone HTTP/1.1" 500 Internal Server Error
 ERROR:    Exception in ASGI application
 Traceback (most recent call last):
@@ -294,7 +294,7 @@ Traceback (most recent call last):
     raise exceptions[0]
   File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\socket.py", line 850, in create_connection
     sock.connect(sa)
-ConnectionRefusedError: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
+ConnectionRefusedError: [WinError 10061] Aucune connexion nâ€™a pu Ãªtre Ã©tablie car lâ€™ordinateur cible lâ€™a expressÃ©ment refusÃ©e
 
 The above exception was the direct cause of the following exception:
 
@@ -391,7 +391,7 @@ Traceback (most recent call last):
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 1347, in do_open
     raise URLError(err)
-urllib.error.URLError: <urlopen error [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée>
+urllib.error.URLError: <urlopen error [WinError 10061] Aucune connexion nâ€™a pu Ãªtre Ã©tablie car lâ€™ordinateur cible lâ€™a expressÃ©ment refusÃ©e>
 INFO:     127.0.0.1:41999 - "POST /v1/systemone HTTP/1.1" 500 Internal Server Error
 ERROR:    Exception in ASGI application
 Traceback (most recent call last):
@@ -414,7 +414,7 @@ Traceback (most recent call last):
     raise exceptions[0]
   File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\socket.py", line 850, in create_connection
     sock.connect(sa)
-ConnectionRefusedError: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
+ConnectionRefusedError: [WinError 10061] Aucune connexion nâ€™a pu Ãªtre Ã©tablie car lâ€™ordinateur cible lâ€™a expressÃ©ment refusÃ©e
 
 The above exception was the direct cause of the following exception:
 
@@ -511,7 +511,7 @@ Traceback (most recent call last):
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 1347, in do_open
     raise URLError(err)
-urllib.error.URLError: <urlopen error [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée>
+urllib.error.URLError: <urlopen error [WinError 10061] Aucune connexion nâ€™a pu Ãªtre Ã©tablie car lâ€™ordinateur cible lâ€™a expressÃ©ment refusÃ©e>
 INFO:     127.0.0.1:42005 - "GET /health HTTP/1.1" 200 OK
 INFO:     127.0.0.1:42006 - "GET /health HTTP/1.1" 200 OK
 INFO:     127.0.0.1:42007 - "GET /health HTTP/1.1" 200 OK
@@ -5759,7 +5759,7 @@ Traceback (most recent call last):
     raise exceptions[0]
   File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\socket.py", line 850, in create_connection
     sock.connect(sa)
-ConnectionRefusedError: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
+ConnectionRefusedError: [WinError 10061] Aucune connexion nâ€™a pu Ãªtre Ã©tablie car lâ€™ordinateur cible lâ€™a expressÃ©ment refusÃ©e
 
 The above exception was the direct cause of the following exception:
 
@@ -5856,7 +5856,7 @@ Traceback (most recent call last):
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 1347, in do_open
     raise URLError(err)
-urllib.error.URLError: <urlopen error [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée>
+urllib.error.URLError: <urlopen error [WinError 10061] Aucune connexion nâ€™a pu Ãªtre Ã©tablie car lâ€™ordinateur cible lâ€™a expressÃ©ment refusÃ©e>
 INFO:     127.0.0.1:48793 - "GET /health HTTP/1.1" 200 OK
 INFO:     127.0.0.1:48798 - "POST /v1/systemone HTTP/1.1" 500 Internal Server Error
 ERROR:    Exception in ASGI application
@@ -5880,7 +5880,7 @@ Traceback (most recent call last):
     raise exceptions[0]
   File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\socket.py", line 850, in create_connection
     sock.connect(sa)
-ConnectionRefusedError: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
+ConnectionRefusedError: [WinError 10061] Aucune connexion nâ€™a pu Ãªtre Ã©tablie car lâ€™ordinateur cible lâ€™a expressÃ©ment refusÃ©e
 
 The above exception was the direct cause of the following exception:
 
@@ -5977,7 +5977,7 @@ Traceback (most recent call last):
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 1347, in do_open
     raise URLError(err)
-urllib.error.URLError: <urlopen error [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée>
+urllib.error.URLError: <urlopen error [WinError 10061] Aucune connexion nâ€™a pu Ãªtre Ã©tablie car lâ€™ordinateur cible lâ€™a expressÃ©ment refusÃ©e>
 INFO:     127.0.0.1:48803 - "POST /v1/systemone HTTP/1.1" 500 Internal Server Error
 ERROR:    Exception in ASGI application
 Traceback (most recent call last):
@@ -6000,7 +6000,7 @@ Traceback (most recent call last):
     raise exceptions[0]
   File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\socket.py", line 850, in create_connection
     sock.connect(sa)
-ConnectionRefusedError: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
+ConnectionRefusedError: [WinError 10061] Aucune connexion nâ€™a pu Ãªtre Ã©tablie car lâ€™ordinateur cible lâ€™a expressÃ©ment refusÃ©e
 
 The above exception was the direct cause of the following exception:
 
@@ -6097,7 +6097,7 @@ Traceback (most recent call last):
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 1347, in do_open
     raise URLError(err)
-urllib.error.URLError: <urlopen error [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée>
+urllib.error.URLError: <urlopen error [WinError 10061] Aucune connexion nâ€™a pu Ãªtre Ã©tablie car lâ€™ordinateur cible lâ€™a expressÃ©ment refusÃ©e>
 INFO:     127.0.0.1:48807 - "POST /v1/systemone HTTP/1.1" 500 Internal Server Error
 ERROR:    Exception in ASGI application
 Traceback (most recent call last):
@@ -6120,7 +6120,7 @@ Traceback (most recent call last):
     raise exceptions[0]
   File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\socket.py", line 850, in create_connection
     sock.connect(sa)
-ConnectionRefusedError: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée
+ConnectionRefusedError: [WinError 10061] Aucune connexion nâ€™a pu Ãªtre Ã©tablie car lâ€™ordinateur cible lâ€™a expressÃ©ment refusÃ©e
 
 The above exception was the direct cause of the following exception:
 
@@ -6217,7 +6217,7 @@ Traceback (most recent call last):
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "C:\Users\ops\AppData\Roaming\uv\python\cpython-3.12.9-windows-x86_64-none\Lib\urllib\request.py", line 1347, in do_open
     raise URLError(err)
-urllib.error.URLError: <urlopen error [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée>
+urllib.error.URLError: <urlopen error [WinError 10061] Aucune connexion nâ€™a pu Ãªtre Ã©tablie car lâ€™ordinateur cible lâ€™a expressÃ©ment refusÃ©e>
 INFO:     127.0.0.1:48812 - "GET /health HTTP/1.1" 200 OK
 INFO:     127.0.0.1:48813 - "GET /health HTTP/1.1" 200 OK
 INFO:     127.0.0.1:48814 - "GET /health HTTP/1.1" 200 OK
