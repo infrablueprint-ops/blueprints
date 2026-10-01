@@ -1,0 +1,12 @@
+$ uv run python download_direct.py
+# 2026-10-01T12:00:47+02:00 | Windows 11 | AMD Radeon RX 6950 XT (Vulkan0) | llama.cpp b11193 | Git Bash
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+-> bartowski/OmniJev_OneJev-4B-GGUF/OmniJev_OneJev-4B-Q4_K_M.gguf
+   3.17 GB, SHA-256 verified (f97a1078bfa3f3cc...)
+-> bartowski/OmniJev_OneJev-4B-GGUF/mmproj-OmniJev_OneJev-4B-f16.gguf
+   0.67 GB, SHA-256 verified (ccb5773fbc65aac0...)
+-> OmniJev/OneJev-4B tokenizer files
+   C:\Temp\analyse_ocr_onejev\bp_fresh2\blueprints\14-onejev-invoice-triage\models\OneJev-4B-tokenizer
+Ready. Start the OneJev server with:
+  uv run qev serve --gguf models/OmniJev_OneJev-4B-Q4_K_M.gguf --mmproj models/mmproj-OmniJev_OneJev-4B-f16.gguf --tokenizer models/OneJev-4B-tokenizer --host 127.0.0.1 --port 8000
+exit=0 elapsed=23.5s

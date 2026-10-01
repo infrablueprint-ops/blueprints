@@ -1,0 +1,10 @@
+# 2026-10-01T13:51:51+02:00 | Windows 11 | AMD Radeon RX 6950 XT (Vulkan0) | llama.cpp b11193 | Git Bash | one invoice, 6 questions, qev serve (README command)
+$ uv run python invoice_triage.py samples/invoices/01_nimbus_saas_invoice.pdf --dpi 72   # server: LLAMA_ARG_FLASH_ATTN=off
+01_nimbus_saas_invoice.pdf  (12111 ms, 6 questions)
+$ uv run python invoice_triage.py samples/invoices/01_nimbus_saas_invoice.pdf --dpi 100   # server: LLAMA_ARG_FLASH_ATTN=off
+01_nimbus_saas_invoice.pdf  (17062 ms, 6 questions)
+$ uv run python invoice_triage.py samples/invoices/01_nimbus_saas_invoice.pdf --dpi 150   # server: LLAMA_ARG_FLASH_ATTN=off
+01_nimbus_saas_invoice.pdf  (247161 ms, 6 questions)
+$ uv run python invoice_triage.py samples/invoices/01_nimbus_saas_invoice.pdf --dpi 72   # server: LLAMA_ARG_FLASH_ATTN=auto (default)
+$ uv run python invoice_triage.py samples/invoices/01_nimbus_saas_invoice.pdf --dpi 100   # server: LLAMA_ARG_FLASH_ATTN=auto (default)
+$ uv run python invoice_triage.py samples/invoices/01_nimbus_saas_invoice.pdf --dpi 150   # server: LLAMA_ARG_FLASH_ATTN=auto (default)

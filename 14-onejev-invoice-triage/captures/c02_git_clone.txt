@@ -1,0 +1,5 @@
+$ git clone https://github.com/infrablueprint-ops/blueprints.git && git -C blueprints log -1 --format='%H %s'
+# 2026-10-01T12:00:43+02:00 | Windows 11 | AMD Radeon RX 6950 XT (Vulkan0) | llama.cpp b11193 | Git Bash
+Cloning into 'blueprints'...
+229b8992072912300cdca4ef141f22836bd31d84 Merge pull request #2 from infrablueprint-ops/feat/14-realistic-invoices
+exit=0 elapsed=1.0s

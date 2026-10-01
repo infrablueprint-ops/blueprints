@@ -1,0 +1,10 @@
+$ llama-server --version; uv --version; llama-server --list-devices
+# 2026-10-01T12:00:43+02:00 | Windows 11 | AMD Radeon RX 6950 XT (Vulkan0) | llama.cpp b11193 | Git Bash
+0.00.000.472 I srv  llama_server: initializing ...
+version: 0.5.0-dev (build 11193, commit 4e7481175)
+built with Clang 20.1.8 for Windows x86_64
+uv 0.12.19 (bea138450 2026-09-24 x86_64-pc-windows-msvc)
+0.00.000.549 I srv  llama_server: initializing ...
+Available devices:
+  Vulkan0: AMD Radeon RX 6950 XT (16368 MiB, 15569 MiB free)
+exit=0 elapsed=0.2s
