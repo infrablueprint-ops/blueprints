@@ -43,7 +43,7 @@
     },
     "vat_shown": {
       "type": "noul",
-      "instructions": "The document shows a VAT or sales-tax amount greater than zero. A tax line marked 'not applicable' or a tax ID number alone does not count."
+      "instructions": "The document shows a VAT or sales-tax amount greater than zero. 'Not applicable' or a tax ID does not count."
     },
     "amount_band": {
       "type": "choice",

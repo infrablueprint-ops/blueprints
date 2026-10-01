@@ -40,16 +40,16 @@
           "type": "choice",
           "choice": "paid",
           "probabilities": {
-            "paid": 0.95956,
-            "due": 0.03242,
-            "overdue": 0.005413,
-            "no_payment_info": 0.002607
+            "paid": 0.958804,
+            "due": 0.032983,
+            "overdue": 0.005549,
+            "no_payment_info": 0.002665
           },
-          "confidence": 0.94608
+          "confidence": 0.945072
         },
         "vat_shown": {
           "type": "noul",
-          "noul": 0.949062
+          "noul": 0.95134
         },
         "amount_band": {
           "type": "choice",
@@ -80,7 +80,7 @@
           "confidence": 0.0
         }
       },
-      "latency_ms": 11843.3
+      "latency_ms": 12598.2
     },
     "02_stratus_cloud_invoice.pdf": {
       "answers": {
@@ -120,16 +120,16 @@
           "type": "choice",
           "choice": "due",
           "probabilities": {
-            "paid": 0.006213,
-            "due": 0.945274,
-            "overdue": 0.045417,
-            "no_payment_info": 0.003096
+            "paid": 0.006247,
+            "due": 0.944833,
+            "overdue": 0.045806,
+            "no_payment_info": 0.003114
           },
-          "confidence": 0.927032
+          "confidence": 0.926443
         },
         "vat_shown": {
           "type": "noul",
-          "noul": 0.036142
+          "noul": 0.025363
         },
         "amount_band": {
           "type": "choice",
@@ -160,7 +160,7 @@
           "confidence": 0.328772
         }
       },
-      "latency_ms": 13663.5
+      "latency_ms": 13307.3
     },
     "03_kestrel_hardware_invoice.pdf": {
       "answers": {
@@ -200,16 +200,16 @@
           "type": "choice",
           "choice": "paid",
           "probabilities": {
-            "paid": 0.946836,
-            "due": 0.040755,
-            "overdue": 0.009853,
-            "no_payment_info": 0.002556
+            "paid": 0.947142,
+            "due": 0.040464,
+            "overdue": 0.009832,
+            "no_payment_info": 0.002563
           },
-          "confidence": 0.929115
+          "confidence": 0.929523
         },
         "vat_shown": {
           "type": "noul",
-          "noul": 0.941185
+          "noul": 0.942288
         },
         "amount_band": {
           "type": "choice",
@@ -240,7 +240,7 @@
           "confidence": 0.085319
         }
       },
-      "latency_ms": 11729.5
+      "latency_ms": 11755.3
     },
     "04_harbor_inn_receipt.pdf": {
       "answers": {
@@ -280,16 +280,16 @@
           "type": "choice",
           "choice": "paid",
           "probabilities": {
-            "paid": 0.584665,
-            "due": 0.247122,
-            "overdue": 0.057619,
-            "no_payment_info": 0.110594
+            "paid": 0.584449,
+            "due": 0.247231,
+            "overdue": 0.05814,
+            "no_payment_info": 0.110179
           },
-          "confidence": 0.44622
+          "confidence": 0.445933
         },
         "vat_shown": {
           "type": "noul",
-          "noul": 0.953877
+          "noul": 0.943981
         },
         "amount_band": {
           "type": "choice",
@@ -320,7 +320,7 @@
           "confidence": 0.109068
         }
       },
-      "latency_ms": 11597.2
+      "latency_ms": 11725.8
     },
     "05_copper_pot_receipt.pdf": {
       "answers": {
@@ -360,16 +360,16 @@
           "type": "choice",
           "choice": "paid",
           "probabilities": {
-            "paid": 0.67689,
-            "due": 0.19817,
-            "overdue": 0.029012,
-            "no_payment_info": 0.095928
+            "paid": 0.676384,
+            "due": 0.198144,
+            "overdue": 0.029232,
+            "no_payment_info": 0.09624
           },
-          "confidence": 0.569187
+          "confidence": 0.568512
         },
         "vat_shown": {
           "type": "noul",
-          "noul": 0.920667
+          "noul": 0.895289
         },
         "amount_band": {
           "type": "choice",
@@ -400,7 +400,7 @@
           "confidence": 0.0
         }
       },
-      "latency_ms": 5837.5
+      "latency_ms": 5903.9
     },
     "06_volt_energy_bill.pdf": {
       "answers": {
@@ -440,16 +440,16 @@
           "type": "choice",
           "choice": "due",
           "probabilities": {
-            "paid": 0.018691,
-            "due": 0.81678,
-            "overdue": 0.146462,
-            "no_payment_info": 0.018067
+            "paid": 0.01871,
+            "due": 0.815861,
+            "overdue": 0.147337,
+            "no_payment_info": 0.018092
           },
-          "confidence": 0.755706
+          "confidence": 0.754482
         },
         "vat_shown": {
           "type": "noul",
-          "noul": 0.939644
+          "noul": 0.929676
         },
         "amount_band": {
           "type": "choice",
@@ -480,7 +480,7 @@
           "confidence": 0.17693
         }
       },
-      "latency_ms": 13131.6
+      "latency_ms": 13264.9
     },
     "07_fiberlink_telecom_invoice.pdf": {
       "answers": {
@@ -520,16 +520,16 @@
           "type": "choice",
           "choice": "due",
           "probabilities": {
-            "paid": 0.007888,
-            "due": 0.90488,
-            "overdue": 0.081776,
-            "no_payment_info": 0.005456
+            "paid": 0.00823,
+            "due": 0.902819,
+            "overdue": 0.083272,
+            "no_payment_info": 0.005679
           },
-          "confidence": 0.873173
+          "confidence": 0.870426
         },
         "vat_shown": {
           "type": "noul",
-          "noul": 0.952378
+          "noul": 0.959437
         },
         "amount_band": {
           "type": "choice",
@@ -560,7 +560,7 @@
           "confidence": 0.251065
         }
       },
-      "latency_ms": 13169.8
+      "latency_ms": 13290.6
     },
     "08_paperline_supplies_invoice.pdf": {
       "answers": {
@@ -600,16 +600,16 @@
           "type": "choice",
           "choice": "paid",
           "probabilities": {
-            "paid": 0.964154,
-            "due": 0.02783,
-            "overdue": 0.006619,
-            "no_payment_info": 0.001397
+            "paid": 0.963502,
+            "due": 0.028344,
+            "overdue": 0.006739,
+            "no_payment_info": 0.001414
           },
-          "confidence": 0.952205
+          "confidence": 0.951337
         },
         "vat_shown": {
           "type": "noul",
-          "noul": 0.946319
+          "noul": 0.946499
         },
         "amount_band": {
           "type": "choice",
@@ -640,7 +640,7 @@
           "confidence": 0.212141
         }
       },
-      "latency_ms": 11642.4
+      "latency_ms": 11755.0
     },
     "09_atlas_legal_invoice.pdf": {
       "answers": {
@@ -680,16 +680,16 @@
           "type": "choice",
           "choice": "due",
           "probabilities": {
-            "paid": 0.011233,
-            "due": 0.823949,
-            "overdue": 0.155445,
-            "no_payment_info": 0.009374
+            "paid": 0.011646,
+            "due": 0.820313,
+            "overdue": 0.158482,
+            "no_payment_info": 0.009559
           },
-          "confidence": 0.765265
+          "confidence": 0.760418
         },
         "vat_shown": {
           "type": "noul",
-          "noul": 0.951703
+          "noul": 0.951747
         },
         "amount_band": {
           "type": "choice",
@@ -720,7 +720,7 @@
           "confidence": 0.185589
         }
       },
-      "latency_ms": 13197.2
+      "latency_ms": 13230.1
     },
     "10_kestrel_quote.pdf": {
       "answers": {
@@ -760,16 +760,16 @@
           "type": "choice",
           "choice": "no_payment_info",
           "probabilities": {
-            "paid": 0.008881,
-            "due": 0.07791,
-            "overdue": 0.014173,
-            "no_payment_info": 0.899036
+            "paid": 0.008953,
+            "due": 0.078546,
+            "overdue": 0.014204,
+            "no_payment_info": 0.898297
           },
-          "confidence": 0.865381
+          "confidence": 0.864396
         },
         "vat_shown": {
           "type": "noul",
-          "noul": 0.95449
+          "noul": 0.952256
         },
         "amount_band": {
           "type": "choice",
@@ -800,7 +800,7 @@
           "confidence": 0.416602
         }
       },
-      "latency_ms": 13173.8
+      "latency_ms": 13209.2
     },
     "11_nimbus_credit_note.pdf": {
       "answers": {
@@ -840,16 +840,16 @@
           "type": "choice",
           "choice": "no_payment_info",
           "probabilities": {
-            "paid": 0.415677,
-            "due": 0.093517,
-            "overdue": 0.031098,
-            "no_payment_info": 0.459709
+            "paid": 0.414876,
+            "due": 0.093935,
+            "overdue": 0.031074,
+            "no_payment_info": 0.460115
           },
-          "confidence": 0.279612
+          "confidence": 0.280153
         },
         "vat_shown": {
           "type": "noul",
-          "noul": 0.9387
+          "noul": 0.937761
         },
         "amount_band": {
           "type": "choice",
@@ -880,7 +880,7 @@
           "confidence": 0.24415
         }
       },
-      "latency_ms": 12096.0
+      "latency_ms": 12161.3
     },
     "12_stratus_overdue_reminder.pdf": {
       "answers": {
@@ -920,16 +920,16 @@
           "type": "choice",
           "choice": "overdue",
           "probabilities": {
-            "paid": 0.001269,
-            "due": 0.01887,
-            "overdue": 0.978913,
-            "no_payment_info": 0.000948
+            "paid": 0.001275,
+            "due": 0.019083,
+            "overdue": 0.9787,
+            "no_payment_info": 0.000942
           },
-          "confidence": 0.971883
+          "confidence": 0.9716
         },
         "vat_shown": {
           "type": "noul",
-          "noul": 0.343161
+          "noul": 0.138402
         },
         "amount_band": {
           "type": "choice",
@@ -960,7 +960,7 @@
           "confidence": 0.93125
         }
       },
-      "latency_ms": 13107.7
+      "latency_ms": 10523.5
     },
     "13_taxi_receipt.jpg": {
       "answers": {
@@ -1000,16 +1000,16 @@
           "type": "choice",
           "choice": "paid",
           "probabilities": {
-            "paid": 0.901198,
-            "due": 0.065717,
-            "overdue": 0.011778,
-            "no_payment_info": 0.021307
+            "paid": 0.90204,
+            "due": 0.065178,
+            "overdue": 0.011627,
+            "no_payment_info": 0.021154
           },
-          "confidence": 0.868264
+          "confidence": 0.869387
         },
         "vat_shown": {
           "type": "noul",
-          "noul": 0.911525
+          "noul": 0.884147
         },
         "amount_band": {
           "type": "choice",
@@ -1040,7 +1040,7 @@
           "confidence": 0.0
         }
       },
-      "latency_ms": 19284.1
+      "latency_ms": 19537.2
     },
     "14_kestrel_repair_invoice.pdf": {
       "answers": {
@@ -1080,16 +1080,16 @@
           "type": "choice",
           "choice": "due",
           "probabilities": {
-            "paid": 0.009297,
-            "due": 0.909991,
-            "overdue": 0.072122,
-            "no_payment_info": 0.00859
+            "paid": 0.009267,
+            "due": 0.910461,
+            "overdue": 0.071601,
+            "no_payment_info": 0.008671
           },
-          "confidence": 0.879988
+          "confidence": 0.880615
         },
         "vat_shown": {
           "type": "noul",
-          "noul": 0.947881
+          "noul": 0.941154
         },
         "amount_band": {
           "type": "choice",
@@ -1120,7 +1120,7 @@
           "confidence": 0.239299
         }
       },
-      "latency_ms": 13486.5
+      "latency_ms": 13662.2
     },
     "15_northlight_print_invoice.pdf": {
       "answers": {
@@ -1160,16 +1160,16 @@
           "type": "choice",
           "choice": "paid",
           "probabilities": {
-            "paid": 0.621248,
-            "due": 0.318006,
-            "overdue": 0.042403,
-            "no_payment_info": 0.018343
+            "paid": 0.623531,
+            "due": 0.31607,
+            "overdue": 0.042216,
+            "no_payment_info": 0.018183
           },
-          "confidence": 0.494997
+          "confidence": 0.498041
         },
         "vat_shown": {
           "type": "noul",
-          "noul": 0.95616
+          "noul": 0.954979
         },
         "amount_band": {
           "type": "choice",
@@ -1200,7 +1200,7 @@
           "confidence": 0.214971
         }
       },
-      "latency_ms": 13087.3
+      "latency_ms": 13294.8
     },
     "16_rays_plumbing_handwritten.pdf": {
       "answers": {
@@ -1240,16 +1240,16 @@
           "type": "choice",
           "choice": "due",
           "probabilities": {
-            "paid": 0.011463,
-            "due": 0.891583,
-            "overdue": 0.050775,
-            "no_payment_info": 0.046179
+            "paid": 0.011655,
+            "due": 0.890663,
+            "overdue": 0.05079,
+            "no_payment_info": 0.046892
           },
-          "confidence": 0.855443
+          "confidence": 0.854217
         },
         "vat_shown": {
           "type": "noul",
-          "noul": 0.956912
+          "noul": 0.956698
         },
         "amount_band": {
           "type": "choice",
@@ -1280,7 +1280,7 @@
           "confidence": 0.526595
         }
       },
-      "latency_ms": 13137.4
+      "latency_ms": 13306.2
     }
   },
   "score": {
