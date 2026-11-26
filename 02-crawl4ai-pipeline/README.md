@@ -4,9 +4,9 @@ Production setup for **Crawl4AI** (asynchronous, LLM-friendly web scraping engin
 
 <div align="center">
 
-[![Watch Crawl4AI Masterclass](https://img.youtube.com/vi/qonYs-SIuU0/maxresdefault.jpg)](https://youtu.be/qonYs-SIuU0)
+[![Watch Crawl4AI Masterclass](https://img.youtube.com/vi/bf8qtNK4KUU/maxresdefault.jpg)](https://youtu.be/bf8qtNK4KUU)
 
-*▶️ [Watch the complete 4K step-by-step masterclass on YouTube (08:58)](https://youtu.be/qonYs-SIuU0)*
+*▶️ [Watch the complete 4K step-by-step masterclass on YouTube (08:58)](https://youtu.be/bf8qtNK4KUU)*
 
 </div>
 

@@ -17,23 +17,19 @@
 
 ## 🎬 Featured Video Walkthroughs
 
-Click any preview below to watch the complete 4K step-by-step masterclass with full architecture diagrams and real-time terminal telemetry:
+Click any preview below to watch the complete 4K masterclass; every card links to its code folder (numbers match the folder names):
 
 | ⚙️ 01. Hardened Ansible in Production | 🐙 02. Crawl4AI High-Throughput Crawler |
 | :---: | :---: |
-| [![Ansible Masterclass](https://img.youtube.com/vi/RrKONBKSbRM/hqdefault.jpg)](https://youtu.be/RrKONBKSbRM)<br>▶️ **[Watch 4K Masterclass](https://youtu.be/RrKONBKSbRM)** | [![Crawl4AI Spotlight](https://img.youtube.com/vi/bf8qtNK4KUU/hqdefault.jpg)](https://youtu.be/bf8qtNK4KUU)<br>▶️ **[Watch 4K Spotlight](https://youtu.be/bf8qtNK4KUU)** |
+| [![Ansible Masterclass](https://img.youtube.com/vi/RrKONBKSbRM/hqdefault.jpg)](https://youtu.be/RrKONBKSbRM)<br>▶️ **[Watch 4K Masterclass](https://youtu.be/RrKONBKSbRM)** • [📦 Code](./01-ansible-production) | [![Crawl4AI Spotlight](https://img.youtube.com/vi/bf8qtNK4KUU/hqdefault.jpg)](https://youtu.be/bf8qtNK4KUU)<br>▶️ **[Watch 4K Spotlight](https://youtu.be/bf8qtNK4KUU)** • [📦 Code](./02-crawl4ai-pipeline) |
 
 | 🦀 03. Sovereign Vaultwarden in Rust | ⚛️ 04. Autonomous SRE & eBPF Benchmark |
 | :---: | :---: |
-| [![Vaultwarden Spotlight](https://img.youtube.com/vi/dVSgt6lcXlw/hqdefault.jpg)](https://youtu.be/dVSgt6lcXlw)<br>▶️ **[Watch 4K Spotlight](https://youtu.be/dVSgt6lcXlw)** | [![Autonomous SRE Brief](https://img.youtube.com/vi/yNRBWfI_qRw/hqdefault.jpg)](https://youtu.be/yNRBWfI_qRw)<br>▶️ **[Watch 4K Brief](https://youtu.be/yNRBWfI_qRw)** |
+| [![Vaultwarden Spotlight](https://img.youtube.com/vi/dVSgt6lcXlw/hqdefault.jpg)](https://youtu.be/dVSgt6lcXlw)<br>▶️ **[Watch 4K Spotlight](https://youtu.be/dVSgt6lcXlw)** • [📦 Code](./03-vaultwarden-sovereign) | [![Autonomous SRE Brief](https://img.youtube.com/vi/yNRBWfI_qRw/hqdefault.jpg)](https://youtu.be/yNRBWfI_qRw)<br>▶️ **[Watch 4K Brief](https://youtu.be/yNRBWfI_qRw)** • [📦 Code](./04-autonomous-sre-ebpf) |
 
-| 🏗️ 05. Production Terraform Foundations | 🧠 06. JEV — Typed AI Decisions |
+| 🦀 13. RustFS Disk-Failure Lab | 🧾 14. OmniJev OneJev — Local Invoice Categorization |
 | :---: | :---: |
-| [![Terraform Masterclass](https://img.youtube.com/vi/s9Piakl4s-g/hqdefault.jpg)](https://youtu.be/s9Piakl4s-g)<br>▶️ **[Watch 4K Masterclass](https://youtu.be/s9Piakl4s-g)** | [![JEV Brief](https://img.youtube.com/vi/P1FfigH033Q/hqdefault.jpg)](https://youtu.be/P1FfigH033Q)<br>▶️ **[Watch 4K Blueprint](https://youtu.be/P1FfigH033Q)** |
-
-| 🧾 07. OmniJev OneJev — Local Invoice Categorization |
-| :---: |
-| [![OmniJev OneJev](https://img.youtube.com/vi/EZT_4F5IiOw/hqdefault.jpg)](https://youtu.be/EZT_4F5IiOw)<br>▶️ **[Watch 4K Zero to Production](https://youtu.be/EZT_4F5IiOw)** • [📱 Short](https://youtu.be/oM1gAXkBdAc) |
+| [![RustFS Lab](https://img.youtube.com/vi/K7dxVI5F__Q/hqdefault.jpg)](https://youtu.be/K7dxVI5F__Q)<br>▶️ **[Watch 4K Lab](https://youtu.be/K7dxVI5F__Q)** • [📦 Code](./13-rustfs-disk-failure-lab) | [![OmniJev OneJev](https://img.youtube.com/vi/EZT_4F5IiOw/hqdefault.jpg)](https://youtu.be/EZT_4F5IiOw)<br>▶️ **[Watch 4K Zero to Production](https://youtu.be/EZT_4F5IiOw)** • [📱 Short](https://youtu.be/oM1gAXkBdAc) • [📦 Code](./14-onejev-invoice-triage) |
 
 ---
 

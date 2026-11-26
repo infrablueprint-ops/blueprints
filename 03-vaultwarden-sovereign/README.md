@@ -4,9 +4,9 @@ Production-hardened deployment of **Vaultwarden** (lightweight Bitwarden-compati
 
 <div align="center">
 
-[![Watch Vaultwarden Masterclass](https://img.youtube.com/vi/xVttPj_b7nI/maxresdefault.jpg)](https://youtu.be/xVttPj_b7nI)
+[![Watch Vaultwarden Masterclass](https://img.youtube.com/vi/dVSgt6lcXlw/maxresdefault.jpg)](https://youtu.be/dVSgt6lcXlw)
 
-*▶️ [Watch the complete 4K step-by-step masterclass on YouTube (09:05)](https://youtu.be/xVttPj_b7nI)*
+*▶️ [Watch the complete 4K step-by-step masterclass on YouTube (09:05)](https://youtu.be/dVSgt6lcXlw)*
 
 </div>
 
