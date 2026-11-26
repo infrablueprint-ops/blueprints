@@ -4,9 +4,9 @@ Autonomous incident response evaluation harness using the UIUC SREGym L/C/S trip
 
 <div align="center">
 
-[![Watch Autonomous SRE Brief](https://img.youtube.com/vi/WTNcJKHX8vk/maxresdefault.jpg)](https://youtu.be/WTNcJKHX8vk)
+[![Watch Autonomous SRE Brief](https://img.youtube.com/vi/yNRBWfI_qRw/maxresdefault.jpg)](https://youtu.be/yNRBWfI_qRw)
 
-*▶️ [Watch the complete 4K step-by-step research brief on YouTube (08:54)](https://youtu.be/WTNcJKHX8vk)*
+*▶️ [Watch the complete 4K step-by-step research brief on YouTube (08:54)](https://youtu.be/yNRBWfI_qRw)*
 
 </div>
 
